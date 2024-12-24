@@ -1,6 +1,6 @@
 .container {
     text-align: center;
-    font-family: Raleway; 
+    font-family: 'Raleway'; 
   /*  margin-left: 30em;
     margin-right: 30em; 
     padding-left: 20em;
@@ -42,7 +42,7 @@
 
 .PrincipalTitleSellMore  .titleSellMore{
 
-    font-weight: 300;
+    font-weight: 400;
 
 
 }
@@ -60,4 +60,61 @@
     margin-left: 300px;
     margin-right: 300px;
     height: 200px;
+}
+
+
+.IconsWithColors h2{
+
+    font-weight: 300;
+
+
+
+}
+
+.IconsWithColors h3{
+    letter-spacing: 5px;
+}
+
+.IconsWithColors h4{
+    font-weight: 300;
+    color: grey;
+}
+
+.redIcon .rectanguloRojo{
+
+    background-color: #FB3B64;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px 100px 100px 100px;
+    position: absolute;
+    top: 38em;
+    left: 56.5em;            /* Ajusta la posición horizontal (puedes modificar esto según el diseño) */
+    z-index: -1;
+
+}
+
+.blueIcon .rectanguloAzul{
+
+    background-color: #08A6E4;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px 100px 100px 100px;
+    position: absolute;
+    top: 48em;
+    left: 56.5em;            /* Ajusta la posición horizontal (puedes modificar esto según el diseño) */
+    z-index: -1;
+
+}
+
+.greenIcon .rectanguloVerde{
+
+    background-color: #55DFB4;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px 100px 100px 100px;
+    position: absolute;
+    top: 60em;
+    left: 56.5em;            /* Ajusta la posición horizontal (puedes modificar esto según el diseño) */
+    z-index: -1;
+
 }
