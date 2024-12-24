@@ -1,15 +1,21 @@
+@charset "UTF-8";
 .container {
   text-align: center;
   font-family: Raleway;
-  margin-left: 30em;
-  margin-right: 30em;
-  padding-left: 20em;
-  padding-right: 20em;
+  /*  margin-left: 30em;
+    margin-right: 30em; 
+    padding-left: 20em;
+    padding-right: 20em;*/
+}
+
+.header .divTitlePrincipal {
+  color: #08A6E4;
+  font-weight: 10;
 }
 
 .titlePrincipal {
-  font-weight: 0;
-  color: #08A6E4;
+  font-weight: 300;
+  font-size: 90;
 }
 
 .btnOpenYourShop {
@@ -21,6 +27,22 @@
   width: 250px;
   font-weight: bold;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  filter: drop-shadow(5px 10px 8px rgba(7, 172, 230, 0.2901960784));
+}
+
+.PrincipalTitleSellMore .titleSellMore {
+  font-weight: 300;
+}
+
+.textoOpenShopOnOurPlatform {
+  font-weight: 450;
+  font-size: 15px;
+}
+
+.imagenPequeñaOrdenador {
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */
