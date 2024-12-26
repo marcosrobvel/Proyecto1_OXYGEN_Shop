@@ -58,15 +58,23 @@
   color: grey;
 }
 
+.redIcon {
+  position: relative;
+}
+
 .redIcon .rectanguloRojo {
   background-color: #FB3B64;
   width: 60px;
   height: 60px;
   border-radius: 100px 100px 100px 100px;
   position: absolute;
-  top: 38em;
-  left: 56.5em; /* Ajusta la posición horizontal (puedes modificar esto según el diseño) */
+  top: 0.1em;
+  left: 27em;
   z-index: -1;
+}
+
+.blueIcon {
+  position: relative;
 }
 
 .blueIcon .rectanguloAzul {
@@ -75,9 +83,13 @@
   height: 60px;
   border-radius: 100px 100px 100px 100px;
   position: absolute;
-  top: 48em;
-  left: 56.5em; /* Ajusta la posición horizontal (puedes modificar esto según el diseño) */
+  top: -0.6em;
+  left: 27em;
   z-index: -1;
+}
+
+.greenIcon {
+  position: relative;
 }
 
 .greenIcon .rectanguloVerde {
@@ -86,8 +98,8 @@
   height: 60px;
   border-radius: 100px 100px 100px 100px;
   position: absolute;
-  top: 60em;
-  left: 56.5em; /* Ajusta la posición horizontal (puedes modificar esto según el diseño) */
+  top: -0.1em;
+  left: 27em;
   z-index: -1;
 }
 
