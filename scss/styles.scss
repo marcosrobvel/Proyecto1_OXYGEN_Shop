@@ -1,6 +1,6 @@
 .container {
     text-align: center;
-    font-family: 'Raleway'; 
+  //  font-family: 'Raleway'; 
   /*  margin-left: 30em;
     margin-right: 30em; 
     padding-left: 20em;
@@ -13,13 +13,14 @@
 
     color: #08A6E4;
     font-weight: 10;
-
+    font-family: 'Raleway'; 
 
 }
 
 .titlePrincipal{
     font-weight: 300;
     font-size: 90;
+    font-family: 'Raleway'; 
 }
 
 
@@ -35,6 +36,7 @@
     font-weight: bold;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     filter: drop-shadow(5px 10px 8px #07ACE64A);
+    font-family: 'Raleway'; 
 
 }
 
@@ -43,7 +45,7 @@
 .PrincipalTitleSellMore  .titleSellMore{
 
     font-weight: 400;
-
+    font-family: 'Raleway'; 
 
 }
 
@@ -51,6 +53,7 @@
 
     font-weight: 450;
     font-size: 15px;
+    font-family: 'Raleway'; 
 
 }
 
@@ -66,18 +69,20 @@
 .IconsWithColors h2{
 
     font-weight: 300;
-
+    font-family: 'Raleway'; 
 
 
 }
 
 .IconsWithColors h3{
     letter-spacing: 5px;
+    font-family: 'Raleway'; 
 }
 
 .IconsWithColors h4{
     font-weight: 300;
     color: grey;
+    font-family: 'Raleway'; 
 }
 
 .redIcon{
@@ -128,5 +133,93 @@
     top: -0.1em;
     left: 27em;           
     z-index: -1;
+
+}
+
+.titleBeAlwaysFirst{
+
+    max-width: 350px;  
+    margin: 0 auto;
+    font-family: 'Raleway'; 
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+
+
+}
+
+
+.titleBeAlwaysFirst h4{
+
+    text-align: justify;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.titleYourShopIsWhereYouAre{
+
+    font-family: 'Raleway';
+    max-width: 350px;  
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.titleYourShopIsWhereYouAre h4{
+
+    text-align: justify;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.titleIncreaseRecognitionYourBrand{
+
+    font-family: 'Raleway';
+    max-width: 350px;  
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.titleIncreaseRecognitionYourBrand h4{
+
+    text-align: justify;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+
+.rectangleTrumpet{
+
+    background-color: #55DFB4;
+    height: 205px;
+    width: 355px;
+
+}
+
+.rectangleTrumpet img{
+
+    margin-top: 30px;
+
+}
+
+
+.ellipseMobile{
+
+    background-color: #08A6E4;
+    border-radius: 100px 100px 100px 100px;
+    width: 130px;
+    height: 130px;
+    
 
 }
