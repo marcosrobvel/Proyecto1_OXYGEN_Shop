@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*@media only screen and (min-width: 975px){
+    .redIcon, .blueIcon, .greenIcon {
+        position: relative;
+        text-align: center;
+    }
+}*/
 .container {
   text-align: center;
   /*  margin-left: 30em;
@@ -110,6 +116,10 @@
   z-index: -1;
 }
 
+.titleBeAlwaysFirst .ellipseLaptop {
+  text-align: center;
+}
+
 .titleBeAlwaysFirst {
   max-width: 350px;
   margin: 0 auto;
@@ -117,6 +127,7 @@
   text-align: justify;
   font-size: 20px;
   font-weight: 100;
+  position: relative;
 }
 
 .titleBeAlwaysFirst h4 {
@@ -124,6 +135,7 @@
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
+  position: relative;
 }
 
 .titleYourShopIsWhereYouAre {
@@ -168,11 +180,131 @@
   margin-top: 30px;
 }
 
+.ellipseLaptop {
+  background-color: #FB3B64;
+  border-radius: 41px 41px 41px 41px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 1;
+  right: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+}
+
 .ellipseMobile {
   background-color: #08A6E4;
   border-radius: 100px 100px 100px 100px;
   width: 130px;
   height: 130px;
+  margin: 0 auto;
+}
+
+.imagenLaptopConEllipseRoja {
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+.titleBeAlwaysFirst .ellipseMobile{
+    text-align: center;
+}
+*/
+.pricing .pricingBasic {
+  border: 3px solid #FB3B64;
+  height: 300px;
+  width: 300px;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.titleh2Pricing h2 {
+  font-family: "Ralweay";
+}
+
+.pricingBasicTitle {
+  font-family: "Raleway";
+  font-size: 20px;
+  text-align: left;
+  z-index: 1;
+  padding-left: 40px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.pricingBasicTitle h3 {
+  font-family: "Open Sans";
+  color: #FB3B64;
+  font-weight: 200;
+  font-size: 50px;
+  text-align: left;
+  z-index: 1;
+}
+
+/*
+.pricingBasicInformation{
+
+    font-family: 'Open Sans';
+    text-align: right;
+ //   padding-right: 10px;
+    box-sizing: border-box;
+
+}
+
+.pricingBasicChecksInformation{
+    font-family: 'Open Sans';
+//    text-align: center;
+    padding-right: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}*/
+.pricingBasicTitle p {
+  font-family: "Open Sans";
+  text-align: right;
+  padding-right: 30px;
+  z-index: 1;
+}
+
+.pricing .pricingProfessional {
+  border: 3px solid #08A6E4;
+  height: 300px;
+  width: 300px;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.pricing .pricingPremium {
+  border: 3px solid #55DFB4;
+  height: 300px;
+  width: 300px;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+
+.anyQuestions {
+  height: 50px;
+  width: 300px;
+  justify-self: center;
+  text-align: left;
+}
+
+.anyQuestions h2 {
+  font-family: "Raleway";
+}
+
+.anyQuestions h5 {
+  font-family: "Open Sans";
+}
+
+.footer {
+  margin-top: 500px;
+  justify-self: center;
+  text-align: left;
+  width: 300px;
+}
+
+.footer .iconoTwitter .iconoFacebook {
+  justify-self: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
