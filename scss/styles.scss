@@ -287,14 +287,21 @@
 
 
 
+// INICIO PRICING BASIC ---------------------------------------------------------------------------------------
+
+.pricing{
+    margin-top: 100px;
+}
 
 .pricing .pricingBasic{
 
     border: 3px solid #FB3B64;
-    height: 300px;
-    width: 300px;
+    height: 308px;
+    width: 350px;
     border-radius: 18px;
     margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
 
 }
 
@@ -304,16 +311,17 @@
 }
 
 
+
 .pricingBasicTitle{
 
     font-family: 'Raleway';
     font-size: 20px;
-    text-align: left;
     z-index: 1;
-    padding-left: 40px;
     padding-top: 50px;
-  //  display: block;
     margin: 0 auto;
+    width: 50px;
+    position: absolute;
+    left: 60px;
 
 }
 
@@ -321,27 +329,79 @@
     font-family: 'Open Sans';
     color: #FB3B64;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 55px;
     text-align: left;
-    z-index: 1;
+    position: relative;
+    bottom: 40px;
 }
-/*
+
+.pricingBasicTitle h4{
+
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+
+}
+
 .pricingBasicInformation{
 
     font-family: 'Open Sans';
-    text-align: right;
+
+    text-align: left;
+    position: absolute;
+    left: 170px;
+    top: 10px;
+    width: 290px;
  //   padding-right: 10px;
-    box-sizing: border-box;
+ //   box-sizing: border-box;.
 
 }
 
-.pricingBasicChecksInformation{
-    font-family: 'Open Sans';
-//    text-align: center;
-    padding-right: 30px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}*/
+
+.pricingBasicInformation .checkbox1BsicInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 38px;
+    left: 6px;
+}
+
+.pricingBasicInformation .checkbox2BsicInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 77px;
+    right: 10px;
+}
+
+.pricingBasicInformation .checkbox3BsicInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 114px;
+    right: 26px;
+}
+
+.pricingBasicInformation .checkbox4BsicInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 154px;
+    right: 41px;
+}
+
+.pricingBasicInformation .checkbox5BsicInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 192px;
+    right: 56px;
+}
+
+
+.pricingBasicInformation p{
+
+    margin-left: 30px;
+ //   border: solid yellow;
+
+}
+
+
 
 .pricingBasicTitle p{
 
@@ -353,24 +413,301 @@
 }
 
 
-.pricing .pricingProfessional{
-    border: 3px solid #08A6E4;
-    height: 300px;
-    width: 300px;
-    border-radius: 18px;
-    margin: 0 auto;
+
+.btnBegin{
+
+    color: white;
+    background-color: #FB3B64;
+    border-color: #FB3B64;
+    height: 50px;
+    width: 150px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    right: 65px;
+    border-radius: 25px;
+
 }
 
+.btnBegin p{
+
+    position: relative;
+    top: 12px;
+    right: 13px;
+
+}
+
+// FIN PRICING BASIC ---------------------------------------------------------------------------------------
+
+
+
+// INICIO PRICING PROFESSIONAL ---------------------------------------------------------------------------------------
+
+.pricing .pricingProfessional{
+    border: 3px solid #08A6E4;
+    height: 308px;
+    width: 350px;
+    border-radius: 18px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+.pricingProfessionalTitle{
+
+    font-family: 'Raleway';
+    font-size: 20px;
+    z-index: 1;
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 50px;
+    position: absolute;
+
+}
+
+
+.pricingProfessionalInformation{
+
+    font-family: 'Open Sans';
+
+    text-align: left;
+    position: relative;
+    left: 210px;
+    top: 20px;
+    
+
+}
+
+
+.pricingProfessionalTitle h3{
+    font-family: 'Open Sans';
+    color: #08A6E4;
+    font-weight: 200;
+    font-size: 55px;
+    text-align: left;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+
+.pricingProfessionalTitle h4{
+
+    font-size: 25px;
+    position: relative;
+ //   top: 50px;
+    left: 15px;
+    top: 20px;
+
+}
+
+.pricingProfessionalTitle h6{
+    font-size: 15px;
+    position: relative;
+    bottom: 90px;
+    right: 20px;
+    width: 200px;
+}
+
+
+.pricingProfessionalInformation .checkbox1ProfessionalInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 38px;
+    right: 25px;
+}
+
+.pricingProfessionalInformation .checkbox2ProfessionalInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 77px;
+    right: 40px;
+}
+
+.pricingProfessionalInformation .checkbox3ProfessionalInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 114px;
+    right: 55px;
+}
+
+.pricingProfessionalInformation .checkbox4ProfessionalInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 154px;
+    right: 70px;
+}
+
+.pricingProfessionalInformation .checkbox5ProfessionalInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 192px;
+    right: 85px;
+}
+
+
+.btnBeginProfessional{
+
+    color: white;
+    background-color: #08A6E4;
+    border-color: #08A6E4;
+    height: 50px;
+    width: 150px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: 105px;
+    border-radius: 25px;
+
+}
+
+.btnBeginProfessional p{
+
+    position: relative;
+    top: 12px;
+    right: 0px;
+
+
+}
+
+// FIN PRICING PROFESSIONAL ---------------------------------------------------------------------------------------
+
+
+// INICIO PRICING PREMIUM ---------------------------------------------------------------------------------------
 
 .pricing .pricingPremium{
 
     border: 3px solid #55DFB4;
-    height: 300px;
-    width: 300px;
+    height: 308px;
+    width: 350px;
     border-radius: 18px;
     margin: 0 auto;
+    margin-bottom: 50px;
 
 }
+
+.pricingPremiumTitle{
+
+    font-family: 'Raleway';
+    font-size: 20px;
+    z-index: 1;
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 50px;
+    position: absolute;
+
+}
+
+.pricingPremiumTitle h3{
+    font-family: 'Open Sans';
+    color: #55DFB4;
+    font-weight: 200;
+    font-size: 55px;
+    text-align: left;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+
+.pricingPremiumTitle h4{
+
+    font-size: 25px;
+    position: relative;
+ //   top: 50px;
+    left: 15px;
+    top: 20px;
+
+}
+
+.pricingPremiumTitle h6{
+    font-size: 15px;
+    position: relative;
+    bottom: 90px;
+    right: 20px;
+    width: 200px;
+}
+
+
+.pricingPremiumInformation{
+
+    font-family: 'Open Sans';
+
+    text-align: left;
+    position: relative;
+    left: 210px;
+    top: 20px;
+    
+
+}
+
+
+
+.pricingPremiumInformation .checkbox1PremiumInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 38px;
+    right: 25px;
+}
+
+.pricingPremiumInformation .checkbox2PremiumInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 77px;
+    right: 40px;
+}
+
+.pricingPremiumInformation .checkbox3PremiumInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 114px;
+    right: 55px;
+}
+
+.pricingPremiumInformation .checkbox4PremiumInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 154px;
+    right: 70px;
+}
+
+.pricingPremiumInformation .checkbox5PremiumInformation{
+    position: relative;
+ //   border: solid #55DFB4;
+    top: 192px;
+    right: 85px;
+}
+
+
+.btnBeginPremium{
+
+    color: white;
+    background-color: #55DFB4;
+    border-color: #55DFB4;
+    height: 50px;
+    width: 150px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: 105px;
+    border-radius: 25px;
+
+}
+
+.btnBeginPremium p{
+
+    position: relative;
+    top: 12px;
+    right: 0px;
+
+
+}
+
+// FIN PRICING PREMIUM ---------------------------------------------------------------------------------------
 
 .anyQuestions{
 
@@ -392,12 +729,18 @@
 .anyQuestions h2{
 
     font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 35px;
+    position: relative;
 
 }
 
 .anyQuestions h5{
 
     font-family: 'Open Sans';
+    font-weight: 300;
+    position: relative;
+    bottom: 20px;
 
 }
 
