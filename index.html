@@ -6,13 +6,14 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="css/styles.css">
     <title>OXYGEN Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+        
         <!-- Título principal del menu -->
 
         <header class="header">
@@ -71,27 +72,38 @@
 
             <div class="redIcon">
                 <!--     <div class="rectanguloRojo"></div>-->
-                <div class="rectanguloRojo"></div><img src="img/iconoRojo.png" alt="">
-                <h3>100000+</h3>
-                <h4>daily entries</h4>
+                <div class="redIconColorRojo"></div>
+                <img src="img/iconoRojo.png" alt="">
+                
+                <div class="redIconRojoTexto">
+                    <h3>100000+</h3>
+                    <h4>daily entries</h4>
+                </div>
+
             </div>
 
             <br>
 
             <div class="blueIcon">
-                <div class="rectanguloAzul"></div>
+                <div class="redIconColorAzul"></div>
                 <img src="img/Eye 2.png" alt="">
-                <h3>200000+</h3>
-                <h4>seen products <br> every day</h4>
+                
+                <div class="redIconAzulTexto">
+                    <h3>200000+</h3>
+                    <h4>seen products <br> every day</h4>
+                </div>
             </div>
 
             <br>
 
             <div class="greenIcon">
-                <div class="rectanguloVerde"></div>
+                <div class="redIconColorVerde"></div>
                 <img src="img/Catalog 2.png" alt="">
-                <h3>10000+</h3>
-                <h4>added post <br> daily</h4>
+                
+                <div class="redIconVerdeTexto">
+                    <h3>10000+</h3>
+                    <h4>added post <br> daily</h4>
+                </div>
             </div>
 
         </div>
@@ -260,26 +272,29 @@
 
                 <div class="anyQuestionsEjemplo">
 
+                    <img src="img/Group.png" alt="" class="imagenEmail">
+                    <p class="parrafoEmail">info@bestshop.com</p>
 
-                    <p><img src="img/Group.png" alt="">info@bestshop.com</p>
-
-                    <p><img src="img/Phone Icon 2.png" alt="">123 456 789</p>
+                    <img src="img/Phone Icon 2.png" alt="" class="imagenTelefono"> 
+                    <p class="parrafoNumero">123 456 789</p>
 
                 </div>
 
                 <div class="anyQuestionsRellenarDatos">
 
-                    <p>NAME <input type="text"></p>
-                    <p>EMAIL <input type="email"></p>
+                    <p>NAME</p>
+                    <input type="text" class="inputName">
+                    <p>EMAIL</p>
+                    <input type="email" class="inputEmail">
 
                 </div>
 
                 <div class="moreInformation">
 
-                    <input type="checkbox" name="" id="" checked class="moreInformationCheckbox">
-                    I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                    <input type="checkbox" name="" class="moreInformationCheckbox" id="inputCheck">
+                    <label for="inputCheck">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
 
-                    <input type="button" value="Send">
+                    <input type="button" value="Send" class="btnSend">
 
                 </div>
 
@@ -295,13 +310,15 @@
 
         <footer class="footer">
 
-            <h2 class="footerh2">OXYGEN Shop</h2>
-            <h6>© 2022 OXYGEN, All Rights Reserved</h6>
+            <div class="tituloYMarcaRegistradaFooter">    
+                <h2 class="footerh2">OXYGEN Shop</h2>
+                <h6>© 2022 OXYGEN, All Rights Reserved</h6>
+            </div>
 
-                
+            <div class="iconosFooter">    
                 <a href="https://x.com/?lang=es" class="iconoTwitter"><img src="img/Twitter (2) 2.png" alt=""></a>
                 <a href="https://www.facebook.com/?locale=es_ES" class="iconoFacebook"><img src="img/Facebook (3) 2.png" alt=""></a>
-
+            </div>
             
 
 

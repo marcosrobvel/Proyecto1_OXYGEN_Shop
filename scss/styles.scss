@@ -27,13 +27,36 @@
     color: #08A6E4;
     font-weight: 10;
     font-family: 'Raleway'; 
+    
 
+}
+
+
+
+
+
+.header{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    width: 225px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.divTitlePrincipal img{
+    position: relative;
+    left: 102px;
 }
 
 .titlePrincipal{
     font-weight: 300;
     font-size: 90;
     font-family: 'Raleway'; 
+    position: relative;
+    top: 40px;
+    right: 35px;
+
 }
 
 
@@ -48,7 +71,7 @@
     width: 250px;
     font-weight: bold;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    filter: drop-shadow(5px 10px 8px #07ACE64A);
+ //   filter: drop-shadow(5px 10px 8px #07ACE64A);
     font-family: 'Raleway'; 
 
 }
@@ -59,6 +82,7 @@
 
     font-weight: 400;
     font-family: 'Raleway'; 
+    margin-top: 100px;
 
 }
 
@@ -76,6 +100,92 @@
     margin-left: 300px;
     margin-right: 300px;
     height: 200px;
+}
+
+.IconsWithColors{
+    text-align: center;
+}
+
+
+.redIcon .blueIcon .greenIcon{
+ //   display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+
+.redIconColorRojo, .redIconColorAzul, .redIconColorVerde {
+    position: relative; 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.redIcon img{
+    position: relative;
+    z-index: 2;
+    left: 10px;
+}
+
+.blueIcon img{
+    position: relative;
+    z-index: 2;
+    left: 10px;
+}
+
+.greenIcon img{
+    position: relative;
+    z-index: 2;
+    left: 10px;
+}
+
+.redIconColorRojo {
+    background-color: #FB3B64;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: 60px;
+    right: 10px;
+    z-index: 1;
+}
+
+
+.redIconColorAzul {
+    background-color: #08A6E4;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: 10px;
+    z-index: 1;
+}
+
+
+.blueIcon .redIconColorAzul{
+    position: relative;
+    right: 10px;
+    top: 48px;
+}
+
+
+
+.redIconColorVerde {
+    background-color: #55DFB4;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: 10px;
+    z-index: 1;
+}
+
+
+.greenIcon .redIconColorVerde{
+    position: relative;
+    right: 10px;
+    top: 55px;
 }
 
 
@@ -99,60 +209,93 @@
 }
 
 .redIcon{
-    position: relative;
+   // position: relative;
 }
 
+
+/*
 .redIcon .rectanguloRojo{
 
     background-color: #FB3B64;
     width: 60px;
     height: 60px;
     border-radius: 100px 100px 100px 100px;
-    position: absolute;
-    top: 0.1em;
-    left: 27em;            
-    z-index: -1;
+    left: 520px;
+    top: 60px;
+    position: relative;
 
 }
+
+*/
+
+
 
 .blueIcon{
-    position: relative;
+ //   position: relative;
 }
 
+
+.blueIcon .blueIconColorAzul{
+    position: relative;
+}
+/*
 .blueIcon .rectanguloAzul{
 
     background-color: #08A6E4;
     width: 60px;
     height: 60px;
     border-radius: 100px 100px 100px 100px;
-    position: absolute;
-    top: -0.6em;
-    left: 27em;          
+    position: relative;
+    left: 520px;
+    top: 50px;         
     z-index: -1;
 
-}
+}*/
+
+
+
 
 .greenIcon{
-    position: relative;
+ //   position: relative;
 }
 
+.greenIcon .greenIconColorVerde{
+    position: relative;
+}
+/*
 .greenIcon .rectanguloVerde{
 
     background-color: #55DFB4;
     width: 60px;
     height: 60px;
     border-radius: 100px 100px 100px 100px;
-    position: absolute;
-    top: -0.1em;
-    left: 27em;           
+    position: relative;
+    left: 520px;
+    top: 55px;           
     z-index: -1;
 
 }
 
+*/
+
+
+
+.seccion3{
+    background-color: #F7F7F7;
+    width: 800px;
+    height: 1500px;
+    align-content: center;
+    position: relative;
+    margin: 0 auto;
+
+
+}
 
 .titleBeAlwaysFirst .ellipseLaptop{
 
     text-align: center;
+    position: relative;
+
 
 }
 
@@ -160,25 +303,57 @@
 
 .titleBeAlwaysFirst{
 
-    max-width: 350px;  
+ //   max-width: 350px; 
+    height: 400px;
+    width: 350px; 
     margin: 0 auto;
     font-family: 'Raleway'; 
     text-align: justify;
     font-size: 20px;
     font-weight: 100;
     position: relative;
+    background-color: white;
+    padding: 20px;
+    align-content: center;
+}
 
+
+.titleBeAlwaysFirst h2{
+
+    position: relative;
+    left: 20px;
+    bottom: 30px;
 
 }
 
 
 .titleBeAlwaysFirst h4{
 
-    text-align: justify;
+ //   text-align: justify;
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
-    position: relative
+    width: 300px;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    
+
+}
+
+.divImagenLaptopEllipseRoja img{
+
+    position: relative;
+    bottom: 50px;
+    z-index: 2;
+
+}
+
+.ellipseLaptop{
+    position: relative;
+    left: 180px;
+    z-index: 1;
+    top: 30px;
 
 }
 
@@ -190,7 +365,14 @@
     text-align: justify;
     font-size: 20px;
     font-weight: 100;
+    background-color: white;
+    padding: 20px;
 
+}
+
+.titleYourShopIsWhereYouAre h2{
+    width: 250px;
+    font-weight: 300px;
 }
 
 .titleYourShopIsWhereYouAre h4{
@@ -210,6 +392,9 @@
     text-align: justify;
     font-size: 20px;
     font-weight: 100;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
 
 }
 
@@ -227,13 +412,18 @@
 
     background-color: #55DFB4;
     height: 205px;
-    width: 355px;
+    width: 390px;
+    z-index: 2;
+    position: relative;
+    right: 20px;
+    top: 20px;
 
 }
 
 .rectangleTrumpet img{
 
     margin-top: 30px;
+    position: relative;
 
 }
 
@@ -266,6 +456,12 @@
 }
 
 
+.ellipseMobile img{
+    position: relative;
+    top: 10px;
+}
+
+
 .imagenLaptopConEllipseRoja{
     display: block; 
     margin: 0 auto;
@@ -293,6 +489,12 @@
     margin-top: 100px;
 }
 
+.pricing .titleh2Pricing{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 36px;
+} 
+
 .pricing .pricingBasic{
 
     border: 3px solid #FB3B64;
@@ -305,10 +507,6 @@
 
 }
 
-
-.titleh2Pricing h2{
-    font-family: 'Ralweay';
-}
 
 
 
@@ -745,17 +943,162 @@
 }
 
 
-.footer{
+.anyQuestionsEjemplo{
 
-
-    margin-top: 500px;
-    justify-self: center;
-    text-align: left;
-    width: 300px;
-    
+    font-family: 'Open Sans';
+    color: #A5A5A5; 
 
 }
 
-.footer .iconoTwitter .iconoFacebook{
-    justify-self: right;
+
+.anyQuestionsEjemplo .parrafoEmail{
+    position: relative;
+    bottom: 45px;
+    left: 35px;
+}
+
+
+.anyQuestionsEjemplo .imagenTelefono{
+    position: relative;
+    bottom: 45px;
+}
+
+.anyQuestionsEjemplo .parrafoNumero{
+    position: relative;
+    bottom: 90px;
+    left: 35px;
+}
+
+
+
+
+.anyQuestions .anyQuestionsRellenarDatos{
+    position: relative;
+    bottom: 60px;
+
+}
+
+.anyQuestionsRellenarDatos p{
+    color: #08A6E4;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+.anyQuestionsRellenarDatos .inputName{
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 25px;
+    width: 100%;
+    border-bottom: solid #A5A5A5;
+    border-width: 1.5px;
+
+}
+
+.anyQuestionsRellenarDatos .inputEmail{
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #A5A5A5;
+    width: 100%;
+    border-width: 1.5px;
+
+}
+
+
+
+.moreInformation{
+
+    font-family: 'Open Sans';
+    color: #707070;
+    width: 320px;
+    justify-content: left;
+    font-size: 12px;
+
+}
+
+
+.moreInformation .labelCheck{
+    position: relative;
+    left: 30px;
+    text-align: left;
+}
+
+.moreInformation .moreInformationCheckbox{
+
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 9px;
+    border-radius: 14px 14px 14px 14px;
+
+}
+
+
+/*.moreInformation .moreInformationCheckbox
+[type="""]::before{
+
+  //  background-color: white;
+    outline: 2px solid #95989A;
+    background-color: white;
+
+}
+*/
+
+.btnSend{
+
+    position: relative;
+    top: 50px;
+    background-color: #08A6E4;
+    color: white;
+    border: none;
+    border-radius: 40px 40px 40px 40px;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+ //   filter: drop-shadow(5px 10px 8px #07ACE64A);
+    font-family: 'Raleway'; 
+    position: relative;
+    left: 100px;
+
+}
+
+
+.footer{
+
+
+    margin-top: 700px;
+    justify-self: center;
+    text-align: left;
+    width: 300px;
+    position: relative;
+
+}
+
+.footer .tituloYMarcaRegistradaFooter h2{
+    font-family: 'Raleway';
+    font-weight: 300;
+    position: relative;
+    bottom: 40px;
+    color: #08A6E4;
+}
+
+.footer .tituloYMarcaRegistradaFooter h6{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: #A5A5A5;
+    position: relative;
+    bottom: 60px;
+}
+
+.footer .iconosFooter{
+    position: relative;
+    left: 250px;
+    bottom: 120px;
 }
