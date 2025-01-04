@@ -1,16 +1,12 @@
 @charset "UTF-8";
 .container {
   text-align: center;
-  /*  margin-left: 30em;
-    margin-right: 30em; 
-    padding-left: 20em;
-    padding-right: 20em;*/
 }
 
 .header .divTitlePrincipal {
   color: #08A6E4;
-  font-weight: 10;
   font-family: "Raleway";
+  height: 150px;
 }
 
 .parrafosCabecera {
@@ -19,54 +15,78 @@
 
 .header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  width: 225px;
+  width: 100%;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 100px;
+  margin-bottom: 200px;
 }
 
 .divTitlePrincipal img {
+  height: 40px;
+  width: 60px;
   position: relative;
-  left: 102px;
+  bottom: 140px;
+  right: -400px;
 }
 
 .titlePrincipal {
   font-weight: 300;
-  font-size: 90;
+  font-size: 70px;
   font-family: "Raleway";
   position: relative;
-  top: 40px;
-  right: 35px;
+  /*  top: 40px;
+    right: 35px;*/
+  justify-self: left;
+  margin-left: 20px;
+  bottom: 25px;
+  left: 40px;
 }
 
 .btnOpenYourShop {
   background-color: #08A6E4;
   color: white;
   border: none;
-  border-radius: 40px 40px 40px 40px;
-  height: 50px;
-  width: 250px;
+  border-radius: 58px 58px 58px 55px;
+  height: 120px;
+  width: 600px;
   font-weight: bold;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-family: "Raleway";
+  margin-top: 80px;
+}
+
+.textoOpenYourShop {
+  position: relative;
+  color: white;
+  bottom: 100px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 700;
 }
 
 .PrincipalTitleSellMore .titleSellMore {
   font-weight: 400;
   font-family: "Raleway";
   margin-top: 100px;
+  font-size: 80px;
 }
 
 .textoOpenShopOnOurPlatform {
   font-weight: 450;
-  font-size: 15px;
+  font-size: 25px;
   font-family: "Raleway";
 }
 
 .imagenPequeñaOrdenador {
-  margin-left: 300px;
-  margin-right: 300px;
-  height: 200px;
+  /* margin-left: 300px;
+   margin-right: 300px;*/
+  height: 100%;
+  width: 100%;
+  align-content: center;
+}
+
+.MostPopularSales {
+  font-size: 70px;
 }
 
 .imagenGrandeOrdenador {
@@ -95,50 +115,52 @@
 .redIcon img {
   position: relative;
   z-index: 2;
-  left: 10px;
+  left: 30px;
+  height: 130px;
 }
 
 .blueIcon img {
   position: relative;
   z-index: 2;
-  left: 10px;
+  left: 30px;
+  height: 90px;
 }
 
 .greenIcon img {
   position: relative;
   z-index: 2;
-  left: 10px;
+  left: 30px;
+  height: 100px;
 }
 
 .redIconColorRojo {
   background-color: #FB3B64;
-  height: 60px;
-  width: 60px;
+  height: 140px;
+  width: 140px;
   position: relative;
-  top: 60px;
-  right: 10px;
+  top: 145px;
+  right: 15px;
   z-index: 1;
 }
 
 .redIconColorAzul {
   background-color: #08A6E4;
-  height: 60px;
-  width: 60px;
+  height: 140px;
+  width: 140px;
   position: relative;
-  top: 10px;
   z-index: 1;
 }
 
 .blueIcon .redIconColorAzul {
   position: relative;
-  right: 10px;
-  top: 48px;
+  right: 15px;
+  top: 110px;
 }
 
 .redIconColorVerde {
   background-color: #55DFB4;
-  height: 60px;
-  width: 60px;
+  height: 140px;
+  width: 140px;
   position: relative;
   top: 10px;
   z-index: 1;
@@ -146,8 +168,8 @@
 
 .greenIcon .redIconColorVerde {
   position: relative;
-  right: 10px;
-  top: 55px;
+  right: 15px;
+  top: 120px;
 }
 
 .IconsWithColors h2 {
@@ -156,70 +178,30 @@
 }
 
 .IconsWithColors h3 {
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   font-family: "Raleway";
+  font-size: 50px;
 }
 
 .IconsWithColors h4 {
   font-weight: 300;
   color: grey;
   font-family: "Raleway";
+  font-size: 20px;
 }
 
-/*
-.redIcon .rectanguloRojo{
-
-    background-color: #FB3B64;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px 100px 100px 100px;
-    left: 520px;
-    top: 60px;
-    position: relative;
-
-}
-
-*/
 .blueIcon .blueIconColorAzul {
   position: relative;
 }
 
-/*
-.blueIcon .rectanguloAzul{
-
-    background-color: #08A6E4;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px 100px 100px 100px;
-    position: relative;
-    left: 520px;
-    top: 50px;         
-    z-index: -1;
-
-}*/
 .greenIcon .greenIconColorVerde {
   position: relative;
 }
 
-/*
-.greenIcon .rectanguloVerde{
-
-    background-color: #55DFB4;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px 100px 100px 100px;
-    position: relative;
-    left: 520px;
-    top: 55px;           
-    z-index: -1;
-
-}
-
-*/
 .seccion3 {
   background-color: #F7F7F7;
-  width: 800px;
-  height: 1500px;
+  width: 100%;
+  height: auto;
   align-content: center;
   position: relative;
   margin: 0 auto;
@@ -231,8 +213,8 @@
 }
 
 .titleBeAlwaysFirst {
-  height: 400px;
-  width: 350px;
+  height: 700px;
+  width: 600px;
   margin: 0 auto;
   font-family: "Raleway";
   text-align: justify;
@@ -240,119 +222,148 @@
   font-weight: 100;
   position: relative;
   background-color: white;
-  padding: 20px;
   align-content: center;
+  margin-top: 80px;
 }
 
 .titleBeAlwaysFirst h2 {
   position: relative;
-  left: 20px;
-  bottom: 30px;
+  margin-left: 50px;
+  font-size: 50px;
+  font-weight: 400;
+  bottom: 60px;
 }
 
 .titleBeAlwaysFirst h4 {
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 400;
-  width: 300px;
+  width: 500px;
   position: relative;
-  left: 20px;
+  margin-left: 50px;
   bottom: 20px;
 }
 
 .divImagenLaptopEllipseRoja img {
   position: relative;
-  bottom: 50px;
+  bottom: 70px;
   z-index: 2;
+  height: auto;
+  width: 320px;
+  right: 10px;
 }
 
 .ellipseLaptop {
   position: relative;
-  left: 180px;
+  left: 300px;
   z-index: 1;
-  top: 30px;
+  top: 40px;
 }
 
 .titleYourShopIsWhereYouAre {
   font-family: "Raleway";
-  width: 350px;
+  height: 700px;
+  width: 600px;
   margin: 0 auto;
   text-align: justify;
   font-size: 20px;
   font-weight: 100;
   background-color: white;
-  padding: 20px;
 }
 
 .titleYourShopIsWhereYouAre h2 {
-  width: 250px;
-  font-weight: 300px;
+  width: 350px;
+  position: relative;
+  margin-left: 50px;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 .titleYourShopIsWhereYouAre h4 {
   text-align: justify;
   font-family: "Open Sans";
-  font-size: 14px;
+  position: relative;
+  font-size: 25px;
   font-weight: 400;
+  width: 500px;
+  margin-left: 50px;
 }
 
 .titleIncreaseRecognitionYourBrand {
   font-family: "Raleway";
-  width: 350px;
+  height: 700px;
+  width: 600px;
   margin: 0 auto;
   text-align: justify;
   font-size: 20px;
   font-weight: 100;
   background-color: white;
-  padding: 20px;
   z-index: 1;
+  margin-bottom: 320px;
+}
+
+.titleIncreaseRecognitionYourBrand h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 50px;
+  width: 400px;
+  margin-left: 50px;
+  position: relative;
+  top: 50px;
 }
 
 .titleIncreaseRecognitionYourBrand h4 {
   text-align: justify;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 400;
+  margin-left: 50px;
+  position: relative;
+  top: 50px;
+  width: 500px;
 }
 
 .rectangleTrumpet {
   background-color: #55DFB4;
-  height: 205px;
-  width: 390px;
+  height: 350px;
+  width: 100%;
   z-index: 2;
   position: relative;
-  right: 20px;
-  top: 20px;
+  top: 100px;
 }
 
 .rectangleTrumpet img {
   margin-top: 30px;
   position: relative;
+  height: auto;
+  width: 500px;
 }
 
 .ellipseLaptop {
   background-color: #FB3B64;
-  border-radius: 41px 41px 41px 41px;
-  height: 100px;
-  width: 100px;
+  border-radius: 70px;
+  height: 150px;
+  width: 150px;
   position: absolute;
-  top: 1;
-  right: 0;
   z-index: 1;
   transform: rotate(45deg);
 }
 
 .ellipseMobile {
   background-color: #08A6E4;
-  border-radius: 100px 100px 100px 100px;
-  width: 130px;
-  height: 130px;
+  border-radius: 120px 120px 120px 120px;
+  width: 240px;
+  height: 240px;
   margin: 0 auto;
+  position: relative;
+  top: 20px;
 }
 
 .ellipseMobile img {
   position: relative;
   top: 10px;
+  width: auto;
+  height: 240px;
 }
 
 .imagenLaptopConEllipseRoja {
@@ -360,11 +371,6 @@
   margin: 0 auto;
 }
 
-/*
-.titleBeAlwaysFirst .ellipseMobile{
-    text-align: center;
-}
-*/
 .pricing {
   margin-top: 100px;
 }
@@ -372,7 +378,8 @@
 .pricing .titleh2Pricing {
   font-family: "Raleway";
   font-weight: 400;
-  font-size: 36px;
+  font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .pricing .pricingBasic {
@@ -382,11 +389,24 @@
   border-radius: 18px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 250px;
+  margin-top: 120px;
 }
 
 .pricingBasic .pricingBasicInformation2 {
   display: none;
+}
+
+.pricing .pricingProfessional {
+  transform: scale(1.5);
+}
+
+.pricing .pricingPremium {
+  transform: scale(1.5);
+}
+
+.pricing .pricingBasic {
+  transform: scale(1.5);
 }
 
 .pricingBasicTitle {
@@ -469,7 +489,7 @@
 .btnBegin {
   color: white;
   background-color: #FB3B64;
-  border-color: #FB3B64;
+  border: none;
   height: 50px;
   width: 150px;
   font-family: "Open Sans";
@@ -490,7 +510,7 @@
 .btnBegin2 {
   color: white;
   background-color: #FB3B64;
-  border-color: #FB3B64;
+  border: none;
   height: 50px;
   width: 150px;
   border-radius: 25px;
@@ -504,7 +524,7 @@
   width: 350px;
   border-radius: 18px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 250px;
 }
 
 .pricingProfessionalInformation .pricingBasicInformationEnPROFESSIONAL {
@@ -594,7 +614,7 @@
 .btnBeginProfessional {
   color: white;
   background-color: #08A6E4;
-  border-color: #08A6E4;
+  border: none;
   height: 50px;
   width: 150px;
   font-family: "Open Sans";
@@ -618,7 +638,7 @@
   width: 350px;
   border-radius: 18px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 250px;
 }
 
 .pricingPremiumTitle {
@@ -645,7 +665,7 @@
 .pricingPremiumTitle h4 {
   font-size: 25px;
   position: relative;
-  left: 15px;
+  left: 20px;
   top: 20px;
 }
 
@@ -698,7 +718,7 @@
 .btnBeginPremium {
   color: white;
   background-color: #55DFB4;
-  border-color: #55DFB4;
+  border: none;
   height: 50px;
   width: 150px;
   font-family: "Open Sans";
@@ -726,6 +746,8 @@
   width: 300px;
   justify-self: center;
   text-align: left;
+  transform: scale(1.5);
+  margin-bottom: 300px;
 }
 
 .anyQuestions h2 {
@@ -818,15 +840,6 @@
   border-radius: 14px 14px 14px 14px;
 }
 
-/*.moreInformation .moreInformationCheckbox
-[type="""]::before{
-
-  //  background-color: white;
-    outline: 2px solid #95989A;
-    background-color: white;
-
-}
-*/
 .btnSend {
   position: relative;
   top: 50px;
@@ -844,11 +857,12 @@
 }
 
 .footer {
-  margin-top: 700px;
+  margin-top: 1100px;
   justify-self: center;
   text-align: left;
   width: 300px;
   position: relative;
+  transform: scale(1.5);
 }
 
 .footer .tituloYMarcaRegistradaFooter h2 {
@@ -876,10 +890,6 @@
 @media only screen and (min-width: 1000px) {
   .container {
     text-align: center;
-    /*  margin-left: 30em;
-      margin-right: 30em; 
-      padding-left: 20em;
-      padding-right: 20em;*/
   }
   .header .divTitlePrincipal {
     color: #08A6E4;
@@ -944,9 +954,6 @@
     display: none;
   }
   .imagenPequeñaOrdenador {
-    /* margin-left: 300px;
-     margin-right: 300px;
-     height: 200px;*/
     display: none;
   }
   .imagenGrandeOrdenador {
