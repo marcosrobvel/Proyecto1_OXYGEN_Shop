@@ -887,19 +887,58 @@
   bottom: 120px;
 }
 
+.divTitlePrincipal2 {
+  display: none;
+  z-index: 2;
+}
+
 @media only screen and (min-width: 1000px) {
   .container {
     text-align: center;
   }
-  .header .divTitlePrincipal {
-    color: #08A6E4;
-    font-weight: 10;
-    font-family: "Raleway";
+  .nav {
+    display: none;
   }
+  /* 
+   .header .divTitlePrincipal h1{
+
+       color: #08A6E4;
+       font-weight: 10;
+       font-family: 'Raleway'; 
+       font-size: 70px;
+
+   }*/
   .header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-    width: auto;
-    align-items: center;
+    width: 100%;
+    height: 100px;
+    align-content: center;
+  }
+  .header .divTitlePrincipal2 {
+    display: inline-block;
+    color: #08A6E4;
+    position: relative;
+    font-size: 10px;
+    right: 600px;
+  }
+  .divOpcionesMenu {
+    position: relative;
+    font-family: "Open Sans";
+    color: black;
+    letter-spacing: 4px;
+    font-weight: bold;
+    bottom: 60px;
+    left: 450px;
+  }
+  .divOpcionesMenu p {
+    display: inline;
+    margin-right: 100px;
+    font-size: 15px;
+  }
+  .divTitlePrincipal2 .titlePrincipal {
+    font-size: 40px;
+    position: relative;
+    top: 1px;
   }
   .divTitlePrincipal img {
     display: none;
@@ -919,15 +958,19 @@
     position: relative;
     left: 1000px;
   }
-  .titlePrincipal {
-    font-weight: 300;
-    font-size: 600;
-    font-family: "Raleway";
-    position: relative;
-    bottom: 400px;
-    right: 1000px;
-  }
+  /*  .titlePrincipal{
+        font-weight: 300;
+        font-size: 600;
+        font-family: 'Raleway'; 
+        position: relative;
+        bottom: 400px;
+        right: 1000px;
+
+    }*/
   .btnOpenYourShop {
+    display: none;
+  }
+  .btnOpenYourShop2 {
     background-color: #08A6E4;
     color: white;
     border: none;
@@ -945,6 +988,9 @@
     margin-top: 100px;
     font-size: 50px;
   }
+  .textoOpenYourShop {
+    display: none;
+  }
   .textoOpenShopOnOurPlatform {
     font-weight: 450;
     font-size: 15px;
@@ -957,7 +1003,7 @@
     display: none;
   }
   .imagenGrandeOrdenador {
-    width: 1500px;
+    width: 100%;
     height: 500px;
     display: block;
     position: relative;
@@ -980,24 +1026,28 @@
   .redIcon {
     position: relative;
     right: 400px;
+    transform: scale(0.6);
   }
   .blueIcon {
     position: relative;
-    bottom: 230px;
+    bottom: 450px;
+    transform: scale(0.6);
   }
   .greenIcon {
     position: relative;
     left: 400px;
-    bottom: 480px;
+    bottom: 910px;
+    transform: scale(0.6);
   }
   .redIconColorRojo, .redIconColorAzul, .redIconColorVerde {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    left: 1px;
   }
   .seccion3 {
     background-color: #F7F7F7;
@@ -1013,6 +1063,10 @@
     top: 50px;
     width: 1200px;
     position: relative;
+    height: 400px;
+  }
+  .titleBeAlwaysFirst h2, .titleBeAlwaysFirst h4 {
+    transform: scale(0.8);
   }
   .imagenLaptopConEllipseRoja {
     position: relative;
@@ -1031,22 +1085,23 @@
   }
   .titleBeAlwaysFirst h2 {
     position: relative;
-    bottom: 220px;
-    left: 40px;
+    bottom: 320px;
+    right: 30px;
     font-weight: 400;
   }
   .titleBeAlwaysFirst h4 {
-    width: 450px;
-    bottom: 200px;
+    width: 500px;
+    bottom: 300px;
     left: 40px;
+    font-size: 20px;
   }
   .titleBeAlwaysFirst .lineaRoja {
     background-color: #FB3B64;
     height: 4px;
     width: 300px;
     position: relative;
-    bottom: 170px;
-    left: 40px;
+    bottom: 270px;
+    left: 140px;
   }
   .titleYourShopIsWhereYouAre {
     position: relative;
@@ -1070,27 +1125,31 @@
   .titleYourShopIsWhereYouAre {
     margin-top: 50px;
   }
+  .titleYourShopIsWhereYouAre h2, .titleYourShopIsWhereYouAre h4 {
+    transform: scale(0.8);
+  }
   .titleYourShopIsWhereYouAre h2 {
     position: relative;
-    left: 700px;
+    left: 570px;
     font-weight: 400;
-    width: 250px;
-    bottom: 170px;
+    width: 350px;
+    bottom: 220px;
   }
   .titleYourShopIsWhereYouAre h4 {
     position: relative;
     height: auto;
-    width: 400px;
-    left: 700px;
-    bottom: 150px;
+    width: 600px;
+    left: 550px;
+    bottom: 250px;
+    font-size: 20px;
   }
   .titleYourShopIsWhereYouAre .lineaAzul {
     background-color: #08A6E4;
     height: 4px;
     width: 300px;
     position: relative;
-    bottom: 120px;
-    left: 700px;
+    bottom: 220px;
+    left: 660px;
   }
   .titleIncreaseRecognitionYourBrand {
     position: relative;
@@ -1099,33 +1158,37 @@
     height: 400px;
     right: 280px;
   }
+  .titleIncreaseRecognitionYourBrand h2, .titleIncreaseRecognitionYourBrand h4 {
+    transform: scale(0.8);
+  }
   .titleIncreaseRecognitionYourBrand .rectangleTrumpet {
     position: relative;
-    left: 780px;
-    top: -250px;
-    height: 440px;
-    width: 440px;
+    left: 800px;
+    top: -320px;
+    height: 400px;
+    width: 400px;
   }
   .titleIncreaseRecognitionYourBrand h2 {
     position: relative;
     font-weight: 400;
-    width: 300px;
-    left: 30px;
-    top: 50px;
+    width: 500px;
+    right: 50px;
+    top: 30px;
   }
   .titleIncreaseRecognitionYourBrand h4 {
     position: relative;
-    top: 50px;
-    left: 30px;
-    width: 400px;
+    top: 10px;
+    right: 60px;
+    width: 600px;
+    font-size: 20px;
   }
   .titleIncreaseRecognitionYourBrand .lineaVerde {
     background-color: #55DFB4;
     height: 4px;
     width: 300px;
     position: relative;
-    bottom: 350px;
-    left: 30px;
+    bottom: 380px;
+    left: 50px;
   }
   .rectangleTrumpet img {
     position: relative;
@@ -1134,18 +1197,24 @@
   }
   .pricing {
     margin-top: -200px;
+    transform: scale(0.6);
   }
   .titleh2Pricing {
     margin-bottom: 60px;
+    position: relative;
+    bottom: 800px;
+    justify-self: center;
   }
   .pricingBasic {
     position: relative;
-    right: 450px;
+    right: 750px;
     width: 1000px;
+    bottom: 600px;
   }
   .pricingBasic:hover {
     box-shadow: 10px 10px 15px #FB3B64;
-    transform: scale(1.1);
+    transform: scale(2);
+    transition: transform 0.3s ease-in-out;
   }
   .pricing .pricingBasic {
     height: 450px;
@@ -1178,14 +1247,15 @@
   }
   .pricingProfessional {
     position: relative;
-    top: -510px;
+    bottom: 1300px;
   }
   .pricing .pricingProfessional {
     height: 450px;
   }
   .pricingProfessional:hover {
     box-shadow: 10px 10px 15px #08A6E4;
-    transform: scale(1.1);
+    transform: scale(2);
+    transition: transform 0.3s ease-in-out;
   }
   .pricing .pricingProfessional input {
     position: relative;
@@ -1222,15 +1292,16 @@
   }
   .pricingPremium {
     position: relative;
-    top: -1010px;
-    left: 450px;
+    bottom: 2000px;
+    left: 750px;
   }
   .pricing .pricingPremium {
     height: 450px;
   }
   .pricingPremium:hover {
     box-shadow: 10px 10px 15px #55DFB4;
-    transform: scale(1.1);
+    transform: scale(2);
+    transition: transform 0.3s ease-in-out;
   }
   .pricing .pricingPremium input {
     position: relative;
@@ -1275,7 +1346,8 @@
   }
   .anyQuestions {
     position: relative;
-    bottom: 900px;
+    bottom: 1500px;
+    transform: scale(1.2);
   }
   .anyQuestions h2 {
     font-size: 50px;
@@ -1312,13 +1384,13 @@
   }
   .footer .tituloYMarcaRegistradaFooter {
     position: relative;
-    left: 600px;
+    left: 400px;
     top: 45px;
   }
   .footer .iconosFooter {
     position: relative;
     bottom: 80px;
-    left: 1600px;
+    left: 1200px;
   }
 }
 
