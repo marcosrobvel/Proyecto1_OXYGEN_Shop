@@ -389,8 +389,8 @@
   border-radius: 18px;
   margin: 0 auto;
   position: relative;
-  margin-bottom: 250px;
-  margin-top: 120px;
+  margin-bottom: 350px;
+  margin-top: 160px;
 }
 
 .pricingBasic .pricingBasicInformation2 {
@@ -398,15 +398,15 @@
 }
 
 .pricing .pricingProfessional {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 .pricing .pricingPremium {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 .pricing .pricingBasic {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 .pricingBasicTitle {
@@ -524,7 +524,7 @@
   width: 350px;
   border-radius: 18px;
   margin: 0 auto;
-  margin-bottom: 250px;
+  margin-bottom: 350px;
 }
 
 .pricingProfessionalInformation .pricingBasicInformationEnPROFESSIONAL {
@@ -746,8 +746,8 @@
   width: 300px;
   justify-self: center;
   text-align: left;
-  transform: scale(1.5);
-  margin-bottom: 300px;
+  transform: scale(1.8);
+  margin-bottom: 400px;
 }
 
 .anyQuestions h2 {
@@ -857,20 +857,21 @@
 }
 
 .footer {
-  margin-top: 1100px;
+  margin-top: 1300px;
   justify-self: center;
   text-align: left;
-  width: 300px;
+  width: 100%;
   position: relative;
   transform: scale(1.5);
+  height: auto;
 }
 
 .footer .tituloYMarcaRegistradaFooter h2 {
   font-family: "Raleway";
   font-weight: 300;
   position: relative;
-  bottom: 40px;
   color: #08A6E4;
+  top: 20px;
 }
 
 .footer .tituloYMarcaRegistradaFooter h6 {
@@ -878,18 +879,31 @@
   font-weight: 300;
   color: #A5A5A5;
   position: relative;
-  bottom: 60px;
+}
+
+.footer .tituloYMarcaRegistradaFooter h2, .footer .tituloYMarcaRegistradaFooter h6 {
+  position: relative;
+  left: 200px;
 }
 
 .footer .iconosFooter {
   position: relative;
-  left: 250px;
-  bottom: 120px;
+  left: 930px;
+  bottom: 80px;
+  transform: scale(1.5);
 }
 
 .divTitlePrincipal2 {
   display: none;
   z-index: 2;
+}
+
+.divOpcionesMenu p {
+  display: none;
+}
+
+.btnOpenYourShop2 {
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -919,7 +933,7 @@
     color: #08A6E4;
     position: relative;
     font-size: 10px;
-    right: 600px;
+    right: 750px;
   }
   .divOpcionesMenu {
     position: relative;
@@ -928,7 +942,7 @@
     letter-spacing: 4px;
     font-weight: bold;
     bottom: 60px;
-    left: 450px;
+    left: 550px;
   }
   .divOpcionesMenu p {
     display: inline;
@@ -981,6 +995,7 @@
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-family: "Raleway";
     margin-top: 20px;
+    display: inline-block;
   }
   .PrincipalTitleSellMore .titleSellMore {
     font-weight: 400;
@@ -1011,6 +1026,7 @@
   }
   .IconsWithColors {
     text-align: center;
+    height: 600px;
   }
   .IconsWithColors .MostPopularSales {
     font-size: 40px;
@@ -1056,7 +1072,6 @@
     align-content: center;
     position: relative;
     margin: 0 auto;
-    bottom: 350px;
     padding-bottom: 150px;
   }
   .titleBeAlwaysFirst {
@@ -1196,24 +1211,25 @@
     top: 80px;
   }
   .pricing {
-    margin-top: -200px;
     transform: scale(0.6);
+    height: 900px;
   }
   .titleh2Pricing {
     margin-bottom: 60px;
     position: relative;
-    bottom: 800px;
+    bottom: 300px;
     justify-self: center;
+    transform: scale(1.5);
   }
   .pricingBasic {
     position: relative;
     right: 750px;
     width: 1000px;
-    bottom: 600px;
+    bottom: 200px;
   }
   .pricingBasic:hover {
     box-shadow: 10px 10px 15px #FB3B64;
-    transform: scale(2);
+    transform: scale(1.9);
     transition: transform 0.3s ease-in-out;
   }
   .pricing .pricingBasic {
@@ -1247,14 +1263,14 @@
   }
   .pricingProfessional {
     position: relative;
-    bottom: 1300px;
+    bottom: 1000px;
   }
   .pricing .pricingProfessional {
     height: 450px;
   }
   .pricingProfessional:hover {
     box-shadow: 10px 10px 15px #08A6E4;
-    transform: scale(2);
+    transform: scale(1.9);
     transition: transform 0.3s ease-in-out;
   }
   .pricing .pricingProfessional input {
@@ -1292,7 +1308,7 @@
   }
   .pricingPremium {
     position: relative;
-    bottom: 2000px;
+    bottom: 1800px;
     left: 750px;
   }
   .pricing .pricingPremium {
@@ -1300,7 +1316,7 @@
   }
   .pricingPremium:hover {
     box-shadow: 10px 10px 15px #55DFB4;
-    transform: scale(2);
+    transform: scale(1.9);
     transition: transform 0.3s ease-in-out;
   }
   .pricing .pricingPremium input {
@@ -1334,6 +1350,7 @@
     top: -80px;
     right: 75px;
     border-radius: 25px;
+    border: none;
   }
   .pricingPremium .pricingPremiumTitle {
     position: relative;
@@ -1346,7 +1363,8 @@
   }
   .anyQuestions {
     position: relative;
-    bottom: 1500px;
+    bottom: 150px;
+    left: 100px;
     transform: scale(1.2);
   }
   .anyQuestions h2 {
@@ -1379,18 +1397,18 @@
   .footer {
     margin-top: 0px;
     width: 100%;
-    height: 60px;
+    height: 80px;
     box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
   }
   .footer .tituloYMarcaRegistradaFooter {
     position: relative;
-    left: 400px;
-    top: 45px;
+    left: 200px;
+    bottom: 20px;
   }
   .footer .iconosFooter {
     position: relative;
-    bottom: 80px;
-    left: 1200px;
+    left: 1900px;
   }
 }
 

@@ -12,11 +12,12 @@
     font-family: 'Raleway'; 
  //   border: solid #08A6E4;
     height: 150px;
-
+    
 }
 
 .parrafosCabecera{
     display: none;
+    
 }
 
 
@@ -27,6 +28,7 @@
     position: relative;
     height: 100px;
     margin-bottom: 200px;
+    
  //   border: solid #FB3B64;
 
   //  align-content: center;
@@ -41,6 +43,8 @@
     position: relative;
     bottom: 140px;
     right: -400px;
+    
+    
 }
 
 .titlePrincipal{
@@ -54,6 +58,7 @@
     margin-left: 20px;
     bottom: 25px;
     left: 40px;
+    
 
 }
 
@@ -111,12 +116,14 @@
     height: 100%;
     width: 100%;
     align-content: center;
+    
 
 }
 
 
 .MostPopularSales{
     font-size: 70px;
+    
 }
 
 
@@ -264,7 +271,7 @@
     align-content: center;
     position: relative;
     margin: 0 auto;
-
+    
 
 }
 
@@ -504,8 +511,8 @@
     border-radius: 18px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 250px;
-    margin-top: 120px;
+    margin-bottom: 350px;
+    margin-top: 160px;
     
 
 }
@@ -515,17 +522,17 @@
 }
 
 .pricing .pricingProfessional{
-    transform: scale(1.5);
+    transform: scale(1.8);
     
 }
 
 .pricing .pricingPremium{
-    transform: scale(1.5);
+    transform: scale(1.8);
     
 }
 
 .pricing .pricingBasic{
-    transform: scale(1.5);
+    transform: scale(1.8);
     
 }
 
@@ -672,7 +679,7 @@
     width: 350px;
     border-radius: 18px;
     margin: 0 auto;
-    margin-bottom: 250px;
+    margin-bottom: 350px;
 }
 
 
@@ -942,8 +949,8 @@
     width: 300px;
     justify-self: center;
     text-align: left;
-    transform: scale(1.5);
-    margin-bottom: 300px;
+    transform: scale(1.8);
+    margin-bottom: 400px;
     
 }
 
@@ -1094,12 +1101,13 @@
 .footer{
 
 
-    margin-top: 1100px;
+    margin-top: 1300px;
     justify-self: center;
     text-align: left;
-    width: 300px;
+    width: 100%;
     position: relative;
     transform: scale(1.5);
+    height: auto;
 
 }
 
@@ -1107,8 +1115,8 @@
     font-family: 'Raleway';
     font-weight: 300;
     position: relative;
-    bottom: 40px;
     color: #08A6E4;
+    top: 20px;
 }
 
 .footer .tituloYMarcaRegistradaFooter h6{
@@ -1116,18 +1124,34 @@
     font-weight: 300;
     color: #A5A5A5;
     position: relative;
-    bottom: 60px;
+   // bottom: 60px;
+}
+
+.footer .tituloYMarcaRegistradaFooter h2, .footer .tituloYMarcaRegistradaFooter h6{
+    position: relative;
+    left: 200px;
+
 }
 
 .footer .iconosFooter{
     position: relative;
-    left: 250px;
-    bottom: 120px;
+    left: 930px;
+    bottom: 80px;
+    transform: scale(1.5);
+    
 }
 
 .divTitlePrincipal2{
     display: none;
     z-index: 2;
+}
+
+.divOpcionesMenu p{
+    display: none;
+}
+
+.btnOpenYourShop2{
+    display: none;
 }
 
 
@@ -1170,7 +1194,7 @@
         color: #08A6E4;
         position: relative;
         font-size: 10px;
-        right: 600px;
+        right: 750px;
     }
 
     .divOpcionesMenu{
@@ -1180,7 +1204,7 @@
         letter-spacing: 4px;
         font-weight: bold;
         bottom: 60px;
-        left: 450px;
+        left: 550px;
     }
 
 
@@ -1250,6 +1274,7 @@
         font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
         font-family: 'Raleway'; 
         margin-top: 20px;
+        display: inline-block;
     }
     
     
@@ -1301,6 +1326,8 @@
     .IconsWithColors{
         text-align: center;
       //  display: inline-block;
+      height: 600px;
+      
     }
 
     .IconsWithColors .MostPopularSales{
@@ -1366,8 +1393,9 @@
         align-content: center;
         position: relative;
         margin: 0 auto;
-        bottom: 350px;
+      //  bottom: 450px;
         padding-bottom: 150px;
+        
     
     }
 
@@ -1571,8 +1599,9 @@
 
 
     .pricing{
-        margin-top: -200px;
+     //   margin-top: -200px;
         transform: scale(0.6);
+        height: 900px;
     }
 
 
@@ -1580,8 +1609,9 @@
     .titleh2Pricing{
         margin-bottom: 60px;
         position: relative;
-        bottom: 800px;
+        bottom: 300px;
         justify-self: center;
+        transform: scale(1.5);
     }
 
 
@@ -1589,12 +1619,12 @@
         position: relative;
         right: 750px;
         width: 1000px;
-        bottom: 600px;
+        bottom: 200px;
     }
 
     .pricingBasic:hover{
         box-shadow: 10px 10px 15px #FB3B64;
-        transform: scale(2);
+        transform: scale(1.9);
         transition: transform 0.3s ease-in-out;
     }
 
@@ -1651,7 +1681,7 @@
 
     .pricingProfessional{
         position: relative;
-        bottom: 1300px;
+        bottom: 1000px;
         
     }
 
@@ -1661,7 +1691,7 @@
 
     .pricingProfessional:hover{
         box-shadow: 10px 10px 15px #08A6E4;
-        transform: scale(2);
+        transform: scale(1.9);
         transition: transform 0.3s ease-in-out;
     }
 
@@ -1716,7 +1746,7 @@
 
     .pricingPremium{
         position: relative;
-        bottom: 2000px;
+        bottom: 1800px;
         left: 750px;
         
     }
@@ -1727,7 +1757,7 @@
 
     .pricingPremium:hover{
         box-shadow: 10px 10px 15px #55DFB4;
-        transform: scale(2);
+        transform: scale(1.9);
         transition: transform 0.3s ease-in-out;
     }
 
@@ -1769,6 +1799,7 @@
         top: -80px;
         right: 75px;
         border-radius: 25px;
+        border: none;
     }
 
 
@@ -1788,7 +1819,8 @@
 
     .anyQuestions{
         position: relative;
-        bottom: 1500px;
+        bottom: 150px;
+        left: 100px;
         transform: scale(1.2);
     }
 
@@ -1828,23 +1860,27 @@
     }
 
 
+
+
     .footer{
         margin-top: 0px;
         width: 100%;
-        height: 60px;
+        height: 80px;
         box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+        position: absolute;
+
     }
 
     .footer .tituloYMarcaRegistradaFooter{
         position: relative;
-        left: 400px;
-        top: 45px;
+        left: 200px;
+        bottom: 20px;
     }
 
     .footer .iconosFooter{
         position: relative;
-        bottom: 80px;
-        left: 1200px;
+        
+        left: 1900px;
     }
 
      
