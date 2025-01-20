@@ -7,9 +7,12 @@
   color: #08A6E4;
   font-family: "Raleway";
   height: 150px;
+<<<<<<< HEAD
   align-self: start;
   position: relative;
   bottom: 25px;
+=======
+>>>>>>> b7761f889e5030f0567957616f892d9959561787
 }
 
 .parrafosCabecera {
@@ -22,6 +25,7 @@
   position: relative;
   height: 100px;
   margin-bottom: 200px;
+<<<<<<< HEAD
   border: solid #FFFFFF;
   justify-content: center;
 }
@@ -90,6 +94,16 @@
   background: none;
   border: none;
   color: #08A6E4;
+=======
+}
+
+.divTitlePrincipal img {
+  height: 40px;
+  width: 60px;
+  position: relative;
+  bottom: 140px;
+  right: -400px;
+>>>>>>> b7761f889e5030f0567957616f892d9959561787
 }
 
 .titlePrincipal {
