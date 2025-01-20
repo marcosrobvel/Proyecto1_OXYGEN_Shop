@@ -21,6 +21,57 @@
   margin-bottom: 200px;
 }
 
+/*
+@media only screen and () {
+
+}*/
+.navMenu {
+  position: absolute;
+  top: 80px;
+  right: 20;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  border: solid #55DFB4;
+  letter-spacing: 5px;
+  text-align: left;
+  visibility: hidden;
+}
+
+.menuHamburguesaJS {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 30px;
+  font-family: "Open Sans";
+  justify-self: left;
+  padding-right: 30px;
+  flex-direction: column;
+}
+
+.menuHamburguesaJS li {
+  margin: 10px 0;
+}
+
+.menuHamburguesaJS li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navMenu.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cruzMenu {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  left: 860px;
+  bottom: 80px;
+  display: block;
+}
+
 .divTitlePrincipal img {
   height: 40px;
   width: 60px;
