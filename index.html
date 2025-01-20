@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="css/styles.css">
+    
     <title>OXYGEN Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 
 </head>
 
@@ -22,7 +25,7 @@
 
                 <div class="divTitlePrincipal">
                     <h1 class="titlePrincipal">OXYGENShop</h1>
-                    <img src="img/Menu.png" id="iconoMenu" alt="" class="iconoMenu">
+                    <button id="iconoMenu" class="iconoMenu"><i class="bi bi-list"></i></button>
                 </div>
                 <!-- <div class="parrafosCabecera">
                     <p>WHY US&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;BENEFITS&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PRICES&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;CONTACT</p>
@@ -41,13 +44,14 @@
                 <p>CONTACT</p>
             </div>
 
+            
             <nav class="navMenu" id="navMenu">
-                <img src="img/cruzMenu.png" alt="" id="cruzMenu" class="cruzMenu">
+                <button id="cruzMenu" class="cruzMenu"><i class="bi bi-x"></i></button>
                 <ul class="menuHamburguesaJS">
-                    <li><a href="#">WHY US</a></li>
-                    <li><a href="#">BENEFITS</a></li>
-                    <li><a href="#">PRICES</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#IconsWithColors">WHY US</a></li>
+                    <li><a href="#seccion3">BENEFITS</a></li>
+                    <li><a href="#pricing">PRICES</a></li>
+                    <li><a href="#anyQuestions">CONTACT</a></li>
                 </ul>
             </nav>
 
@@ -57,7 +61,7 @@
 
         <!-- Inicio Parte 1 -->
 
-        <div class="PrincipalTitleSellMore">
+        <div class="PrincipalTitleSellMore" id="PrincipalTitleSellMore">
 
             <h2 class="titleSellMore">Sell More!</h2>
 
@@ -91,7 +95,7 @@
         <img src="img/Background 1mobile.png" class="imagenPequeñaOrdenador" alt="">
         <img src="img/imagen1Ordenadorabierto.png" class="imagenGrandeOrdenador" alt="">
 
-        <div class="IconsWithColors">
+        <div class="IconsWithColors" id="IconsWithColors">
 
             <h2 class="MostPopularSales">
                 The most popular <br> sales platform in <br> country
@@ -145,7 +149,7 @@
 
         <!-- Inicio Parte 3 -->
 
-        <div class="seccion3">
+        <div class="seccion3" id="seccion3">
 
             <div class="titleBeAlwaysFirst">
 
@@ -203,7 +207,7 @@
 
         </div>
 
-        <div class="pricing">
+        <div class="pricing" id="pricing">
 
             <h2 class="titleh2Pricing">Pricing</h2>
 
@@ -375,7 +379,7 @@
 
             <!-- Inicio Any Questions -->
 
-            <div class="anyQuestions">
+            <div class="anyQuestions" id="anyQuestions">
 
                 <h2>Any Questions?</h2>
                 <h5>Leave your email address or call us!</h5>
