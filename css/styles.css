@@ -38,6 +38,7 @@ html {
   width: 100%;
   position: relative;
   height: 100px;
+  margin-bottom: 200px;
   border: solid #FFFFFF;
   justify-content: center;
 }
@@ -133,6 +134,14 @@ html {
   background: none;
   border: none;
   color: #08A6E4;
+}
+
+.divTitlePrincipal img {
+  height: 40px;
+  width: 60px;
+  position: relative;
+  bottom: 140px;
+  right: -400px;
 }
 
 .titlePrincipal {
