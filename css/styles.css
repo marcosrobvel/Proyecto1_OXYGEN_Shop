@@ -1,6 +1,11 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .header .divTitlePrincipal {
@@ -16,14 +21,52 @@
   display: none;
 }
 
+.progressBar {
+  position: fixed;
+  width: 100%;
+  height: 10px;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #08A6E4;
+}
+
 .header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   width: 100%;
   position: relative;
   height: 100px;
-  margin-bottom: 200px;
   border: solid #FFFFFF;
   justify-content: center;
+}
+
+.returnTop {
+  background-color: white;
+  color: #08A6E4;
+  /*   bottom: 16px;*/
+  right: 32px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  justify-self: end;
+  position: relative;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.returnTop.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 /*
@@ -130,7 +173,7 @@
 .PrincipalTitleSellMore .titleSellMore {
   font-weight: 400;
   font-family: "Raleway";
-  margin-top: 100px;
+  margin-top: 200px;
   font-size: 80px;
 }
 
