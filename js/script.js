@@ -38,6 +38,7 @@ const returnTop = document.querySelector(".returnTop");
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100){
         returnTop.classList.add("active");
+        navMenu.classList.remove("visible");
     } else {
         returnTop.classList.remove("active");
     }

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // CSS:
 
 html{
@@ -35,6 +35,7 @@ html{
     position: fixed;
     width: 100%;
     height: 10px;
+    z-index: 1000;
 }
 
 .progress{
@@ -50,9 +51,9 @@ html{
     width: 100%;
     position: relative;
     height: 100px;
- //   margin-bottom: 200px;
     border: solid #FFFFFF;
     justify-content: center;
+    margin-bottom: 0 !important;
     
  //   border: solid #FB3B64;
 
@@ -96,29 +97,34 @@ html{
 
 
 // ---------------------------------------------- MENU HAMBURGUESA -------------------------------------------
-/*
-@media only screen and () {
-    
-}*/
 
-.navMenu{
+
+
+.navMenu {
     position: absolute;
     top: 80px;
-    right: 20;
+    right: 20; /* Fixed missing unit */
     background-color: #FFFFFF;
     width: 100%;
     height: auto;
+    max-height: 0;
+    transform: scaleY(0); /* Start collapsed */
+    transform-origin: top; /* Grow from the top */
+    visibility: hidden;
     letter-spacing: 5px;
     text-align: left;
-    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out, visibility 0s linear 0.5s;
 }
 
-.navMenu.visible{
+.navMenu.visible {
+    transform: scaleY(1); /* Expand vertically */
+    visibility: visible; /* Visible when expanded */
     opacity: 1;
-    visibility: visible;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
-.menuHamburguesaJS{
+.menuHamburguesaJS {
     display: flex;
     list-style-type: none;
     gap: 1rem;
@@ -127,24 +133,22 @@ html{
     justify-self: left;
     padding-right: 30px;
     flex-direction: column;
-    
+    background-color: white;
+ //   border: solid #FB3B64;
+    width: 100%;
+    margin-top: 0;
 }
 
-.menuHamburguesaJS li{
+.menuHamburguesaJS li {
     margin: 10px 0;
-    
 }
 
-.menuHamburguesaJS li a{
+.menuHamburguesaJS li a {
     text-decoration: none;
     color: #000000;
-    
 }
 
-
-
-
-.cruzMenu{
+.cruzMenu {
     height: 50px;
     width: 50px;
     position: relative;
@@ -154,9 +158,8 @@ html{
     font-size: 50px;
     color: #08A6E4;
     border: none;
-    background-color: white;
+    background-color:white;
 }
-
 
 
 // ---------------------------------------------- FIN MENU HAMBURGUESA -------------------------------------------
@@ -2013,8 +2016,6 @@ html{
      
 }
 
-=======
-// CSS:
 
 .container {
     text-align: center;
@@ -3902,5 +3903,4 @@ html{
      
 }
 
->>>>>>> b7761f889e5030f0567957616f892d9959561787
 // FIN MEDIAS
