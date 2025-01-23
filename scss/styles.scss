@@ -1164,8 +1164,9 @@ html{
     width: 100%;
     border-bottom: solid #A5A5A5;
     border-width: 1.5px;
-
+    outline: none;
 }
+
 
 .anyQuestionsRellenarDatos .inputEmail{
 
@@ -1175,9 +1176,20 @@ html{
     border-bottom: solid #A5A5A5;
     width: 100%;
     border-width: 1.5px;
-
+    outline: none;
 }
 
+
+
+.input:required{
+    border: 3px solid red;
+}
+
+
+.warnings{
+    color: red;
+    margin-top: 70px;
+}
 
 
 .moreInformation{
@@ -1288,6 +1300,8 @@ html{
 // --------------------------------------------------------------- MEDIAS: ---------------------------------------------------------------
 
 @media only screen and (min-width: 1000px){
+
+    
 
     .container {
         text-align: center;

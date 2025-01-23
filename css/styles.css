@@ -74,13 +74,13 @@ html {
 .navMenu {
   position: absolute;
   top: 80px;
-  right: 20;
+  right: 20; /* Fixed missing unit */
   background-color: #FFFFFF;
   width: 100%;
   height: auto;
   max-height: 0;
-  transform: scaleY(0); 
-  transform-origin: top; 
+  transform: scaleY(0); /* Start collapsed */
+  transform-origin: top; /* Grow from the top */
   visibility: hidden;
   letter-spacing: 5px;
   text-align: left;
@@ -89,8 +89,8 @@ html {
 }
 
 .navMenu.visible {
-  transform: scaleY(1);
-  visibility: visible;
+  transform: scaleY(1); /* Expand vertically */
+  visibility: visible; /* Visible when expanded */
   opacity: 1;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
@@ -921,6 +921,7 @@ html {
   width: 100%;
   border-bottom: solid #A5A5A5;
   border-width: 1.5px;
+  outline: none;
 }
 
 .anyQuestionsRellenarDatos .inputEmail {
@@ -930,6 +931,16 @@ html {
   border-bottom: solid #A5A5A5;
   width: 100%;
   border-width: 1.5px;
+  outline: none;
+}
+
+.input:required {
+  border: 3px solid red;
+}
+
+.warnings {
+  color: red;
+  margin-top: 70px;
 }
 
 .moreInformation {
