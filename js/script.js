@@ -49,18 +49,23 @@ window.addEventListener("scroll", () => {
 
 // ---------------------------------------- Validacion Inputs NOMBRE y EMAIL ----------------------------------------
 
-document.getElementById('submit').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe antes de validar
-
-    // Obtener los valores de los campos
     var nombre = document.getElementById('inputName');
     var labelName = document.getElementById('labelName');
     var correo = document.getElementById('inputEmail');
     var labelEmail = document.getElementById('labelEmail');
     var consent = document.getElementById('inputCheck');
     var labelConsent = document.getElementById('labelCheck');
+    var formulario = document.getElementById('formulario');
 
     var mensajeError = '';
+    var errorNombre = false;
+    var errorCorreo = false;
+    var errorCheck = false;
+
+function validacionFormulario() {
+    
+
+    
 
     function redBorder(element){
         element.style.borderColor = 'red';
@@ -80,52 +85,76 @@ document.getElementById('submit').addEventListener('click', function(event) {
 
     }
 
-    // Validar campo de nombre
+
+    
+
+    
     if (nombre.value === '') {
+        errorNombre = true;
         mensajeError += 'El campo de nombre es obligatorio.\n';
         redBorder(nombre)
         redText(labelName)
     } else {
+        errorNombre = false;
         correctBorder(nombre)
         correctText(labelName)
     }
 
-    // Validar campo de correo
+    
     var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (correo.value === '') {
+        errorCorreo = true;
         mensajeError += 'El campo de correo es obligatorio.\n';
         redBorder(correo)
         redText(labelEmail)
     } else if (!correoRegex.test(correo.value)) {
+        errorCorreo = true;
         mensajeError += 'El correo no tiene un formato válido.\n';
         redBorder(correo)
         redText(labelEmail)
     } else {
+        errorCorreo = false;
         correctBorder(correo)
         correctText(labelEmail)
     }
 
-    // Validar el checkbox de consentimiento
+    
     if (!consent.checked) {
+        errorCheck = true;
         mensajeError += 'Debes aceptar el consentimiento para procesar tus datos.\n';
         redText(labelConsent)
     } else {
+        errorCheck = false;
         correctText(labelConsent)
     }
 
-    // Mostrar los errores o enviar el formulario
-    if (mensajeError !== '') {
+
+    if (errorNombre || errorCorreo || errorCheck) {
+        console.log('hay errores')
         document.getElementById('warnings').innerText = mensajeError;
     } else {
-        // Aquí puedes proceder a enviar el formulario o hacer lo que necesites
+        console.log('NO hay errores')
         correctBorder(nombre)
         correctText(labelName)
         correctBorder(correo)
         correctText(labelEmail)
         correctText(labelConsent)
+        console.log({nombre: nombre.value, correo: correo.value, consent: consent.value})
         alert('Formulario enviado correctamente');
     }
-});
+};
 
+
+function submitForm(event){
+
+    console.log('hola')
+
+    event.preventDefault()
+
+    validacionFormulario()
+
+}
+
+formulario.addEventListener('submit', submitForm)
 
 // ---------------------------------------- Fin validacion Inputs NOMBRE y EMAIL ----------------------------------------
