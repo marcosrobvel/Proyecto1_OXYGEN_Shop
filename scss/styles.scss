@@ -618,6 +618,11 @@ html{
     margin-bottom: 50px;
 } 
 
+.selectorMoneda{
+        width: 250px;
+        height: 45px;
+}
+
 .pricing .pricingBasic{
 
     border: 3px solid #FB3B64;
@@ -650,6 +655,15 @@ html{
     transform: scale(1.8);
     
 }
+
+.divSimboloYPrecio, .divSimboloYPrecio1, .divSimboloYPrecio2{
+    display: flex;
+    position: relative;
+    bottom: 30px;
+}
+
+
+
 
 
 .pricingBasicTitle{
@@ -859,7 +873,7 @@ html{
 .pricingProfessionalTitle h6{
     font-size: 15px;
     position: relative;
-    bottom: 90px;
+    top: -150px;
     right: 20px;
     width: 200px;
 }
@@ -973,7 +987,7 @@ html{
 .pricingPremiumTitle h6{
     font-size: 15px;
     position: relative;
-    bottom: 90px;
+    top: -150px;
     right: 20px;
     width: 200px;
 }

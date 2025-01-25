@@ -212,14 +212,25 @@
 
         <div class="pricing" id="pricing">
 
-            <h2 class="titleh2Pricing">Pricing</h2>
+            
+                <h2 class="titleh2Pricing">Pricing</h2>
+
+
+                <select class="selectorMoneda" id="currencySelector">
+                 <!--   <option id="usd" value="usd" selected>Dólar (USD)</option>
+                    <option id="eur" value="eur">Euro (EUR)</option>
+                    <option id="gbp" value="gbp">Libra (GBP)</option>-->
+                </select>
             
 
             <div class="pricingBasic">
 
                 <div class="pricingBasicTitle">
                     <h4>Basic</h4>
-                    <h3>$0</h3>
+                    <div class="divSimboloYPrecio">
+                        <h3 id="simbolo">$</h3>
+                        <h3 id="precioBasic" class="precioBasic">0</h3>
+                    </div>
                 </div>
 
                 <div class="pricingBasicInformation">
@@ -269,7 +280,10 @@
 
                 <div class="pricingProfessionalTitle">
                     <h4>Professional</h4>
-                    <h3>$25</h3>
+                    <div class="divSimboloYPrecio1">
+                        <h3 id="simbolo1">$</h3>
+                        <h3 class="precioProfessional" id="precioProfessional">25</h3>
+                    </div>
                     <h6>Limited offer</h6>
 
 
@@ -332,7 +346,10 @@
 
                     <div class="pricingPremiumTitle">
                         <h4>Premium</h4>
-                        <h3>$60</h3>
+                        <div class="divSimboloYPrecio2">
+                            <h3 id="simbolo2">$</h3>
+                            <h3 class="precioPremium" id="precioPremium">60</h3>
+                        </div>
                         <h6>Limited offer</h6>
                     </div>
 
