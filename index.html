@@ -16,6 +16,17 @@
 
 <body>
 
+    <div class="newsletter" id="newsletter">
+        <form class="newsletter-form" id="newsletter-form">
+            <img src = "img/cruzMenu.png" id="close-newsletter"/>
+            <div class="news-text">
+                <section id="newsletter-title">Subscribe to our Newsletter!</section>
+                <input id="newsletter-input" placeholder="email here...">
+                <button type = "submit" id="news-button" class = "news-button">Subscribe</button>
+            </div>
+        </form>
+    </div>
+
     <div class="container">
         
         <!-- Título principal del menu -->
@@ -393,13 +404,31 @@
 
             </div>
         </div>
+
+
+        
             <!-- Fin Parte 3 -->
 
 
 
             <!-- Slider -->
 
-           
+            <div id="slider">
+                <img src="img/iso-republic-autumn-foliage-fallen-leaves.jpeg" alt="Imagen 1">
+                <img src="img/iso-republic-large-fall-leaf.jpg" alt="Imagen 2">
+                <img src="img/picography-autumn-leaves-ground.jpg" alt="Imagen 3">
+                <img src="img/picography-colorful-fall-leaf.jpg" alt="Imagen 4">
+                <img src="img/picography-sunflowers-field-sunset.jpg" alt="Imagen 5">
+
+                <div class="slider-buttons">
+                    <button class="prev"><i class="bi bi-chevron-left"></i></button>
+                    <button class="next"><i class="bi bi-chevron-right"></i></button>
+                  </div>
+                
+                  <!-- Puntos (dots) -->
+                  <div class="slider-dots"></div>
+              </div>
+              
 
             <!-- Fin Slider -->
 
@@ -479,6 +508,8 @@
     <a href="#" class="returnTop">
         <i class="bi bi-chevron-up"></i>
     </a>
+
+    
 
     <script src="./js/script.js"></script>
 </body>

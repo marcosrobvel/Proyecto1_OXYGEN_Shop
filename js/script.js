@@ -40,7 +40,7 @@ const returnTop = document.querySelector(".returnTop");
 
 window.addEventListener("scroll", () => {
     
-    if (window.pageYOffset > 100) {
+    if (window.scrollY >= (0.25 * document.body.scrollHeight)) {
         returnTop.classList.add("active");
         navMenu.classList.remove("visible");
     } else {
@@ -281,6 +281,154 @@ currency();
 
 // ---------------------------------------- Pop-Up ----------------------------------------
 
+let news = document.getElementById("newsletter")
+let closeNewsButton = document.getElementById('close-newsletter');
+let newsHidden = true;
 
+function newsDisplayTrue() {
+    news.classList.add('newsletter--visible');
+}
+
+//function: makes popup appear by time
+function newsTimeAppear(){
+    if (newsHidden){
+        setTimeout(newsDisplayTrue, 5000);
+        newsHidden = false;
+    }    
+}
+ //Function: makes popup appear when scrolling
+
+function newsScrollAppear(){
+    if (scrollPercentRoundedValue >= 25){
+        newsDisplayTrue();
+        newsHidden = false;
+    }
+}
+
+function closeNewsletter(){
+     if (!newsHidden){
+         news.style.display = 'none';
+         news.classList.remove('newsletter--visible');
+         newsHidden = true;
+     }
+ }
+ 
+window.addEventListener('scroll',newsScrollAppear);
+newsTimeAppear();
+closeNewsButton.addEventListener('click',closeNewsletter)
+
+
+//Function newsletter
+let newsMail = document.getElementById('newsletter-input');
+let newsButton = document.getElementById('news-button');
+let newsForm = document.getElementById('newsletter-form');
+
+function getNewsData() {
+    return {
+        'mail': newsMail.value
+    }    
+}
+
+function validateNews (){
+    if(validateEmail(newsMail.value)){
+        return true;
+    }
+    redBorder(newsMail);
+    return false;
+}
+
+function submitNewsletter(event) {
+    event.preventDefault();
+    const newsValid = validateNews();
+    if (newsValid){
+        send(getNewsData());
+        closeNewsletter();
+    }
+}
+newsForm.addEventListener('submit',submitNewsletter);
 
 // ---------------------------------------- Fin pop-Up ----------------------------------------
+
+
+// ---------------------------------------- Slider ----------------------------------------
+
+class Slider {
+    constructor(slider) {
+      this.sliderElement = document.getElementById(slider);
+      this.images = this.sliderElement.getElementsByTagName('img');
+      this.currentIndex = 0;
+      this.totalImages = this.images.length;
+  
+      this.initSlider();
+    }
+  
+    initSlider() {
+      this.addNavigationButtons();
+      this.addDots();
+      this.showImage(this.currentIndex);
+      this.autoSlide();
+    }
+  
+    addNavigationButtons() {
+      const prevButton = document.createElement('button');
+      prevButton.addEventListener('click', () => this.prevImage());
+  
+      const nextButton = document.createElement('button');
+      nextButton.addEventListener('click', () => this.nextImage());
+  
+      const buttonsDiv = document.createElement('div');
+      buttonsDiv.classList.add('slider-buttons');
+      buttonsDiv.appendChild(prevButton);
+      buttonsDiv.appendChild(nextButton);
+  
+      this.sliderElement.appendChild(buttonsDiv);
+    }
+  
+    addDots() {
+      const dotsDiv = document.createElement('div');
+      dotsDiv.classList.add('slider-dots');
+  
+      for (let i = 0; i < this.totalImages; i++) {
+        const dot = document.createElement('span');
+        dot.addEventListener('click', () => this.showImage(i));
+        dotsDiv.appendChild(dot);
+      }
+  
+      this.sliderElement.appendChild(dotsDiv);
+      this.dots = dotsDiv.getElementsByTagName('span');
+    }
+  
+    showImage(index) {
+      for (let i = 0; i < this.totalImages; i++) {
+        this.images[i].classList.remove('active');
+        this.dots[i].classList.remove('active');
+      }
+  
+      this.images[index].classList.add('active');
+      this.dots[index].classList.add('active');
+      this.currentIndex = index;
+    }
+  
+    nextImage() {
+      const nextIndex = (this.currentIndex + 1) % this.totalImages;
+      this.showImage(nextIndex);
+    }
+  
+    prevImage() {
+      const prevIndex = (this.currentIndex - 1 + this.totalImages) % this.totalImages;
+      this.showImage(prevIndex);
+    }
+  
+    autoSlide() {
+      setInterval(() => {
+        this.nextImage();
+      }, 5000); // Cambia de imagen cada 3 segundos
+    }
+}
+  
+  // Inicializamos el slider al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = new Slider('slider');
+  });
+
+  // ---------------------------------------- Fin slider ----------------------------------------
