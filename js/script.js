@@ -289,14 +289,14 @@ function newsDisplayTrue() {
     news.classList.add('newsletter--visible');
 }
 
-//function: makes popup appear by time
+
 function newsTimeAppear(){
     if (newsHidden){
         setTimeout(newsDisplayTrue, 5000);
         newsHidden = false;
     }    
 }
- //Function: makes popup appear when scrolling
+ 
 
 function newsScrollAppear(){
     if (scrollPercentRoundedValue >= 25){
@@ -422,11 +422,11 @@ class Slider {
     autoSlide() {
       setInterval(() => {
         this.nextImage();
-      }, 5000); // Cambia de imagen cada 3 segundos
+      }, 5000); 
     }
 }
   
-  // Inicializamos el slider al cargar la página
+  
   document.addEventListener('DOMContentLoaded', () => {
     const slider = new Slider('slider');
   });
