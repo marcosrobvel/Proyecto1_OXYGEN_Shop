@@ -299,7 +299,7 @@ function newsTimeAppear(){
  
 
 function newsScrollAppear(){
-    if (/*scrollPercentRoundedValue >= 25*/ window.scrollY >= (0.25 * document.body.scrollHeight)){
+    if (window.scrollY >= (0.25 * document.body.scrollHeight)){
         newsDisplayTrue();
         newsHidden = false;
     }
@@ -425,7 +425,6 @@ class Slider {
       }, 5000); 
     }
 }
-  
   
   document.addEventListener('DOMContentLoaded', () => {
     const slider = new Slider('slider');
