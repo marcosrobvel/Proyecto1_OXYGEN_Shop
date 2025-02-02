@@ -281,9 +281,32 @@ currency();
 
 // ---------------------------------------- Pop-Up ----------------------------------------
 
+
+
+var correo = document.getElementById('inputEmail');
+var labelEmail = document.getElementById('labelEmail');
+var formulario = document.getElementById('formulario');
+
+var mensajeError = '';
+var errorCorreo1 = false;
+var errorCorreo2 = false;
+
+var MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
+var MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
+
+
+
+
+
+
 let news = document.getElementById("newsletter")
 let closeNewsButton = document.getElementById('close-newsletter');
 let newsHidden = true;
+let correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+
+
+
 
 function newsDisplayTrue() {
     news.classList.add('newsletter--visible');
@@ -312,13 +335,34 @@ function closeNewsletter(){
          newsHidden = true;
      }
  }
+
+
+ function redBorder(element) {
+    element.style.borderColor = 'red';
+}
+
+function redText(element) {
+    element.style.color = 'red';
+}
+
+function correctBorder(element) {
+    element.style.borderColor = '#A5A5A5'
+
+}
+
+function correctText(element) {
+    element.style.color = '#08A6E4'
+
+}
  
+
+
+
 window.addEventListener('scroll',newsScrollAppear);
 newsTimeAppear();
 closeNewsButton.addEventListener('click',closeNewsletter)
 
 
-//Function newsletter
 let newsMail = document.getElementById('newsletter-input');
 let newsButton = document.getElementById('news-button');
 let newsForm = document.getElementById('newsletter-form');
@@ -330,22 +374,135 @@ function getNewsData() {
 }
 
 function validateNews (){
-    if(validateEmail(newsMail.value)){
-        return true;
+    var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (newsMail.value === '') {
+        errorCorreo1 = true;
+        alert(MensajeErrorCorreo1);
+        redBorder(newsMail)
+        redText(labelEmail)
+    } else if (!correoRegex.test(newsMail.value)) {
+        errorCorreo2 = true;
+        alert(MensajeErrorCorreo2);
+        redBorder(newsMail)
+        redText(labelEmail)
+    } else {
+        errorCorreo1 = false;
+        errorCorreo2 = false;
+        document.getElementById('warnings').innerText = '';
+        correctBorder(newsMail)
+        correctText(labelEmail)
+        alert("El formulario se ha enviado correctamente.")
+        news.style.display = 'none';
     }
-    redBorder(newsMail);
-    return false;
 }
 
 function submitNewsletter(event) {
     event.preventDefault();
     const newsValid = validateNews();
     if (newsValid){
+        correctBorder(newsMail)
         send(getNewsData());
         closeNewsletter();
     }
 }
 newsForm.addEventListener('submit',submitNewsletter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function recogerDatos() {
+    return {
+        'correo': correo.value,
+    };
+}
+
+
+function validacionFormulario() {
+
+
+
+
+    function redBorder(element) {
+        element.style.borderColor = 'red';
+    }
+
+    function redText(element) {
+        element.style.color = 'red';
+    }
+
+    function correctBorder(element) {
+        element.style.borderColor = '#A5A5A5'
+
+    }
+
+    function correctText(element) {
+        element.style.color = '#08A6E4'
+
+    }
+
+
+    var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (correo.value === '') {
+        errorCorreo1 = true;
+        MensajeErrorCorreo1;
+        redBorder(correo)
+        redText(labelEmail)
+    } else if (!correoRegex.test(correo.value)) {
+        errorCorreo2 = true;
+        MensajeErrorCorreo2;
+        redBorder(correo)
+        redText(labelEmail)
+    } else {
+        errorCorreo1 = false;
+        errorCorreo2 = false;
+        document.getElementById('warnings').innerText = '';
+        correctBorder(correo)
+        correctText(labelEmail)
+    }
+
+
+   
+    if (errorCorreo1) {
+        if (!document.getElementById('warnings').innerText.includes(MensajeErrorCorreo1)) {
+            document.getElementById('warnings').innerText += MensajeErrorCorreo1;
+        }
+    }
+    if (errorCorreo2) {
+        if(!document.getElementById('warnings').innerText.includes(MensajeErrorCorreo2)){
+            document.getElementById('warnings').innerText += MensajeErrorCorreo2;
+        }
+    }
+
+    else {
+        correctBorder(correo)
+        correctText(labelEmail)
+        alert('Formulario enviado correctamente');
+    }
+
+    return !errorCorreo1 && !errorCorreo2;
+};
+
+
+
+
+
 
 // ---------------------------------------- Fin pop-Up ----------------------------------------
 

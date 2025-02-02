@@ -23,6 +23,7 @@ html {
 
 .progressBar {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 10px;
   z-index: 999;
@@ -2531,7 +2532,6 @@ html {
 }
 
 #slider {
-  position: sticky;
   left: 50%; /* Centra el slider horizontalmente */
   transform: translateX(-50%); /* Alinea el slider al centro */
   width: 800px; /* Tamaño más grande del slider */
@@ -2540,6 +2540,7 @@ html {
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
   margin-bottom: 70px;
+  position: relative;
 }
 
 #slider img {
@@ -2621,6 +2622,7 @@ html {
     width: 100%;
     height: 8px;
     z-index: 999;
+    top: 0;
   }
   .progress {
     width: 0%;
@@ -2643,18 +2645,23 @@ html {
     position: relative;
     bottom: 300px;
   }
+  button:hover {
+    cursor: pointer;
+  }
   .header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     width: 100%;
     height: 100px;
     align-content: center;
+    position: fixed;
+    background-color: white;
   }
   .header .divTitlePrincipal2 {
     display: inline-block;
     color: #08A6E4;
     position: relative;
-    font-size: 10px;
     right: 750px;
+    bottom: 20px;
   }
   .divOpcionesMenu {
     position: relative;
@@ -2662,7 +2669,7 @@ html {
     color: #A5A5A5;
     letter-spacing: 4px;
     font-weight: bold;
-    bottom: 60px;
+    bottom: 90px;
     left: 550px;
   }
   .divOpcionesMenu a {
@@ -2675,12 +2682,11 @@ html {
   .divOpcionesMenu p {
     display: inline;
     margin-right: 100px;
-    font-size: 15px;
+    font-size: 20px;
   }
   .divTitlePrincipal2 .titlePrincipal {
-    font-size: 40px;
+    font-size: 50px;
     position: relative;
-    top: 1px;
   }
   .divTitlePrincipal img {
     display: none;
@@ -2728,8 +2734,11 @@ html {
   .PrincipalTitleSellMore .titleSellMore {
     font-weight: 400;
     font-family: "Raleway";
-    margin-top: 100px;
     font-size: 50px;
+    position: relative;
+    padding-top: 100px;
+    margin-top: 100px;
+    padding-bottom: 20px;
   }
   .textoOpenYourShop {
     display: none;
@@ -2942,6 +2951,9 @@ html {
     transform: scale(0.6);
     height: 900px;
   }
+  .pricing input:hover {
+    cursor: pointer;
+  }
   .titleh2Pricing {
     margin-bottom: 60px;
     position: relative;
@@ -3092,7 +3104,7 @@ html {
   .slider {
     overflow-y: hidden;
     position: relative;
-    bottom: 700px;
+    bottom: 170px;
   }
   .anyQuestions {
     position: relative;
