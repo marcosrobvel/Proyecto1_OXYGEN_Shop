@@ -215,6 +215,9 @@ function submitForm(event) {
 formulario.addEventListener('submit', submitForm)
 
 
+
+
+
 // ---------------------------------------- Fin enviar formulario a API ----------------------------------------
 
 
@@ -234,7 +237,6 @@ const API_URL = 'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v
 async function currency(){
     const res = await fetch(API_URL);
     const data = await res.json();
-    console.log(data)
     
     //console.log(data['eur']);
     const arrKeys = (Object.keys(data['usd']).filter((moneda) => moneda == "usd" || moneda == "gbp" || moneda == "eur")).reverse();
@@ -251,7 +253,6 @@ async function currency(){
         professionalPrice.textContent = (professionalPriceValue * euros[select.value]).toFixed(1); 
         premiumPrice.textContent = (premiumPriceValue * euros[select.value]).toFixed(1); 
 
-        console.log(select.value)
 
         if(select.value == "usd"){
             simbolo.textContent = "$";
@@ -408,96 +409,6 @@ function submitNewsletter(event) {
 newsForm.addEventListener('submit',submitNewsletter);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function recogerDatos() {
-    return {
-        'correo': correo.value,
-    };
-}
-
-
-function validacionFormulario() {
-
-
-
-
-    function redBorder(element) {
-        element.style.borderColor = 'red';
-    }
-
-    function redText(element) {
-        element.style.color = 'red';
-    }
-
-    function correctBorder(element) {
-        element.style.borderColor = '#A5A5A5'
-
-    }
-
-    function correctText(element) {
-        element.style.color = '#08A6E4'
-
-    }
-
-
-    var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    if (correo.value === '') {
-        errorCorreo1 = true;
-        MensajeErrorCorreo1;
-        redBorder(correo)
-        redText(labelEmail)
-    } else if (!correoRegex.test(correo.value)) {
-        errorCorreo2 = true;
-        MensajeErrorCorreo2;
-        redBorder(correo)
-        redText(labelEmail)
-    } else {
-        errorCorreo1 = false;
-        errorCorreo2 = false;
-        document.getElementById('warnings').innerText = '';
-        correctBorder(correo)
-        correctText(labelEmail)
-    }
-
-
-   
-    if (errorCorreo1) {
-        if (!document.getElementById('warnings').innerText.includes(MensajeErrorCorreo1)) {
-            document.getElementById('warnings').innerText += MensajeErrorCorreo1;
-        }
-    }
-    if (errorCorreo2) {
-        if(!document.getElementById('warnings').innerText.includes(MensajeErrorCorreo2)){
-            document.getElementById('warnings').innerText += MensajeErrorCorreo2;
-        }
-    }
-
-    else {
-        correctBorder(correo)
-        correctText(labelEmail)
-        alert('Formulario enviado correctamente');
-    }
-
-    return !errorCorreo1 && !errorCorreo2;
-};
 
 
 
