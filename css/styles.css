@@ -2792,6 +2792,9 @@ html {
     bottom: 910px;
     transform: scale(0.6);
   }
+  .IconsWithColors h4 {
+    transform: scale(1.6);
+  }
   .redIconColorRojo, .redIconColorAzul, .redIconColorVerde {
     position: relative;
     width: 110px;

@@ -1,0 +1,161 @@
+@mixin formulario {
+    .anyQuestions{
+
+        height: 50px;
+        width: 300px;
+        justify-self: center;
+        text-align: left;
+        transform: scale(1.8);
+        margin-bottom: 400px;
+        
+    }
+    
+    
+    
+    .anyQuestions h2{
+    
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 35px;
+        position: relative;
+    
+    }
+    
+    .anyQuestions h5{
+    
+        font-family: 'Open Sans';
+        font-weight: 300;
+        position: relative;
+        bottom: 20px;
+    
+    }
+    
+    
+    .anyQuestionsEjemplo{
+    
+        font-family: 'Open Sans';
+        color: #A5A5A5; 
+    
+    }
+    
+    
+    .anyQuestionsEjemplo .parrafoEmail{
+        position: relative;
+        bottom: 45px;
+        left: 35px;
+    }
+    
+    
+    .anyQuestionsEjemplo .imagenTelefono{
+        position: relative;
+        bottom: 45px;
+    }
+    
+    .anyQuestionsEjemplo .parrafoNumero{
+        position: relative;
+        bottom: 90px;
+        left: 35px;
+    }
+    
+    
+    
+    
+    .anyQuestions .anyQuestionsRellenarDatos{
+        position: relative;
+        bottom: 60px;
+    
+    }
+    
+    .anyQuestionsRellenarDatos p{
+        color: #08A6E4;
+        font-family: 'Open Sans';
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    
+    
+    .anyQuestionsRellenarDatos .inputName{
+    
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 25px;
+        width: 100%;
+        border-bottom: solid #A5A5A5;
+        border-width: 1.5px;
+        outline: none;
+    }
+    
+    
+    .anyQuestionsRellenarDatos .inputEmail{
+    
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #A5A5A5;
+        width: 100%;
+        border-width: 1.5px;
+        outline: none;
+    }
+    
+    
+    
+    .input:required{
+        border: 3px solid red;
+    }
+    
+    
+    .warnings{
+        color: red;
+        margin-top: 70px;
+    }
+    
+    
+    .moreInformation{
+    
+        font-family: 'Open Sans';
+        color: #707070;
+        width: 320px;
+        justify-content: left;
+        font-size: 12px;
+    
+    }
+    
+    
+    .moreInformation .labelCheck{
+        position: relative;
+        left: 30px;
+        text-align: left;
+    }
+    
+    .moreInformation .moreInformationCheckbox{
+    
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 9px;
+        border-radius: 14px 14px 14px 14px;
+    
+    }
+    
+    
+    
+    .btnSend{
+    
+        position: relative;
+        top: 50px;
+        background-color: #08A6E4;
+        color: white;
+        border: none;
+        border-radius: 40px 40px 40px 40px;
+        height: 50px;
+        width: 200px;
+        font-weight: bold;
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Raleway'; 
+        position: relative;
+        left: 100px;
+    
+    }
+}

@@ -1,0 +1,64 @@
+@mixin menuHamburguesa{
+    
+    .navMenu {
+        position: absolute;
+        top: 80px;
+        right: 20; /* Fixed missing unit */
+        background-color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        max-height: 0;
+        transform: scaleY(0); /* Start collapsed */
+        transform-origin: top; /* Grow from the top */
+        visibility: hidden;
+        letter-spacing: 5px;
+        text-align: left;
+        opacity: 0;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    }
+
+    .navMenu.visible {
+        transform: scaleY(1); /* Expand vertically */
+        visibility: visible; /* Visible when expanded */
+        opacity: 1;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    }
+
+    .menuHamburguesaJS {
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+        font-size: 30px;
+        font-family: 'Open Sans';
+        justify-self: left;
+        padding-right: 30px;
+        flex-direction: column;
+        background-color: white;
+    //   border: solid #FB3B64;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .menuHamburguesaJS li {
+        margin: 10px 0;
+    }
+
+    .menuHamburguesaJS li a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .cruzMenu {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        left: 860px;
+        bottom: 60px;
+        display: block;
+        font-size: 50px;
+        color: #08A6E4;
+        border: none;
+        background-color:white;
+    }
+    
+}
