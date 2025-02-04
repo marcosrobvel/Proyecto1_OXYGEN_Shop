@@ -63,11 +63,13 @@ var formulario = document.getElementById('formulario');
 
 var mensajeError = '';
 var errorNombre = false;
+var errorNombreMinimo2Caracteres = false;
 var errorCorreo1 = false;
 var errorCorreo2 = false;
 var errorCheck = false;
 
 var MensajeErrorNombre = 'El campo de nombre es obligatorio.\n';
+var MensajeErrorNombreMinimo2Caracteres = 'El campo de nombre debe tener entre 2 y 100 caracteres.\n';
 var MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
 var MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
 var MensajeErrorCheck = 'Debes aceptar el consentimiento para procesar tus datos.\n';
@@ -107,14 +109,21 @@ function validacionFormulario() {
 
 
 
-
+    var nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,100}$/;
     if (nombre.value === '') {
         errorNombre = true;
         MensajeErrorNombre;
         redBorder(nombre)
         redText(labelName)
-    } else {
+    } else if(!nombreRegex.test(nombre.value)){
+        errorNombreMinimo2Caracteres = true;
+        MensajeErrorNombreMinimo2Caracteres;
+        redBorder(nombre)
+        redText(labelName)
+    }
+    else {
         errorNombre = false;
+        errorNombreMinimo2Caracteres = false;
         document.getElementById('warnings').innerText = '';
         correctBorder(nombre)
         correctText(labelName)
@@ -157,6 +166,11 @@ function validacionFormulario() {
             document.getElementById('warnings').innerText += MensajeErrorNombre;
         }
     }
+    if (errorNombreMinimo2Caracteres) {
+        if (!document.getElementById('warnings').innerText.includes(MensajeErrorNombreMinimo2Caracteres)) {
+            document.getElementById('warnings').innerText += MensajeErrorNombreMinimo2Caracteres;
+        }
+    }
     if (errorCorreo1) {
         if (!document.getElementById('warnings').innerText.includes(MensajeErrorCorreo1)) {
             document.getElementById('warnings').innerText += MensajeErrorCorreo1;
@@ -182,7 +196,7 @@ function validacionFormulario() {
         alert('Formulario enviado correctamente');
     }
 
-    return !errorNombre && !errorCorreo1 && !errorCorreo2 && !errorCheck;
+    return !errorNombre && !errorNombreMinimo2Caracteres && !errorCorreo1 && !errorCorreo2 && !errorCheck;
 };
 
 
@@ -287,6 +301,7 @@ currency();
 var correo = document.getElementById('inputEmail');
 var labelEmail = document.getElementById('labelEmail');
 var formulario = document.getElementById('formulario');
+const overlay = document.getElementById('overlay');
 
 var mensajeError = '';
 var errorCorreo1 = false;
@@ -303,11 +318,12 @@ var MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
 let news = document.getElementById("newsletter")
 let closeNewsButton = document.getElementById('close-newsletter');
 let newsHidden = true;
+let popUpClosed = false;
 let correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
 
 
-
+document.body.classList.add('no-scroll');
 
 function newsDisplayTrue() {
     news.classList.add('newsletter--visible');
@@ -318,25 +334,42 @@ function newsTimeAppear(){
     if (newsHidden){
         setTimeout(newsDisplayTrue, 5000);
         newsHidden = false;
+        news.style.display = 'block';
+        overlay.style.display = 'block';
     }    
 }
  
 
 function newsScrollAppear(){
-    if (window.scrollY >= (0.25 * document.body.scrollHeight)){
+    if (window.scrollY >= (0.25 * document.body.scrollHeight) && popUpClosed === false){
         newsDisplayTrue();
         newsHidden = false;
+        news.style.display = 'block';
+        overlay.style.display = 'block';
     }
 }
 
 function closeNewsletter(){
      if (!newsHidden){
-         news.style.display = 'none';
          news.classList.remove('newsletter--visible');
          newsHidden = true;
+         news.style.display = 'none';
+         overlay.style.display = 'none';
+         popUpClosed = true;
      }
  }
 
+
+ window.addEventListener('click', (event) => {
+    if (event.target === overlay) {
+        closeNewsletter();
+    }
+});
+
+
+news.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
 
  function redBorder(element) {
     element.style.borderColor = 'red';
@@ -357,7 +390,15 @@ function correctText(element) {
 }
  
 
+window.addEventListener('click', (event) => {
+    // Verificar si el clic fue fuera del popup y el fondo oscuro
+    if (event.target === overlay) {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    }
+  });
 
+  
 
 window.addEventListener('scroll',newsScrollAppear);
 newsTimeAppear();
@@ -394,6 +435,7 @@ function validateNews (){
         correctText(labelEmail)
         alert("El formulario se ha enviado correctamente.")
         news.style.display = 'none';
+        overlay.style.display = 'none';
     }
 }
 

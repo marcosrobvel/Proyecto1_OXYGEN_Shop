@@ -10,6 +10,9 @@ html{
     overflow-x: hidden;
 }
 
+body.no-scroll {
+    overflow-x: hidden;
+}
 
 
 .header .divTitlePrincipal{
@@ -21,7 +24,6 @@ html{
     align-self: start;
     position: relative;
     bottom: 25px;
-    
 }
 
 .parrafosCabecera{
@@ -1067,20 +1069,15 @@ html{
     
     
     
-    .header{
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        width: 100%;
-        height: 100px;
-        align-content: center;
-    }
+    
 
 
     .header .divTitlePrincipal2{
         display: inline-block;
         color: #08A6E4;
-        position: relative;
+       // position: relative;
         font-size: 10px;
-        right: 750px;
+      //  right: 750px;
     }
 
     .divOpcionesMenu{
@@ -1089,8 +1086,6 @@ html{
         color: black;
         letter-spacing: 4px;
         font-weight: bold;
-        bottom: 60px;
-        left: 550px;
     }
 
 
@@ -2989,20 +2984,15 @@ html{
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         width: 100%;
         height: 100px;
-        align-content: center;
         position: fixed;
         background-color: white;
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
 
-    .header .divTitlePrincipal2{
-        display: inline-block;
-        color: #08A6E4;
-        position: relative;
-        right: 750px;
-        bottom: 20px;
-    }
+    
 
     .divOpcionesMenu{
         position: relative;
@@ -3010,8 +3000,6 @@ html{
         color: #A5A5A5;
         letter-spacing: 4px;
         font-weight: bold;
-        bottom: 90px;
-        left: 550px;
     }
 
     
