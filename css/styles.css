@@ -2353,7 +2353,7 @@ body.no-scroll {
 
 .moreInformation .labelCheck {
   position: relative;
-  left: 30px;
+  left: 800px;
   text-align: left;
 }
 
@@ -2361,8 +2361,11 @@ body.no-scroll {
   height: 20px;
   width: 20px;
   position: relative;
-  top: 9px;
   border-radius: 14px 14px 14px 14px;
+  display: flex;
+  top: 25px;
+  right: 30px;
+  gap: 8px; /* Espacio entre el checkbox y el texto */
 }
 
 .btnSend {
@@ -2574,6 +2577,8 @@ body.no-scroll {
   font-size: 24px; /* Tamaño del icono */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .slider-buttons button:hover {
@@ -2586,6 +2591,7 @@ body.no-scroll {
   width: 100%;
   display: flex;
   justify-content: center;
+  transform: scale(0.5);
 }
 
 .slider-dots span {
@@ -2636,6 +2642,7 @@ body.no-scroll {
     height: 45px;
     position: relative;
     bottom: 300px;
+    transform: scale(1.4);
   }
   button:hover {
     cursor: pointer;
@@ -2937,7 +2944,7 @@ body.no-scroll {
     top: 80px;
   }
   .pricing {
-    transform: scale(0.6);
+    transform: scale(0.55);
     height: 900px;
   }
   .pricing input:hover {
