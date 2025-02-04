@@ -125,15 +125,6 @@ body.no-scroll {
 
 
 
-.PrincipalTitleSellMore  .titleSellMore{
-
-    font-weight: 400;
-    font-family: 'Raleway'; 
-    margin-top: 200px;
-    font-size: 80px;
-
-}
-
 .textoOpenShopOnOurPlatform{
 
     font-weight: 450;
@@ -1080,13 +1071,7 @@ body.no-scroll {
       //  right: 750px;
     }
 
-    .divOpcionesMenu{
-        position: relative;
-        font-family: 'Open Sans';
-        color: black;
-        letter-spacing: 4px;
-        font-weight: bold;
-    }
+    
 
 
     .divOpcionesMenu p{
@@ -1159,15 +1144,6 @@ body.no-scroll {
     }
     
     
-    
-    .PrincipalTitleSellMore  .titleSellMore{
-    
-        font-weight: 400;
-        font-family: 'Raleway'; 
-        margin-top: 100px;
-        font-size: 50px;
-    
-    }
 
 
     .textoOpenYourShop{
@@ -2989,6 +2965,7 @@ body.no-scroll {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 200px;
     }
 
 
@@ -3002,32 +2979,30 @@ body.no-scroll {
         font-weight: bold;
     }
 
+
+
+    .relleno{
+        height: 100px;
+        width: 100%;
+        display: hidden;
+        border: solid #08A6E4;
+        z-index: 2000;
+    }
     
 
-    .divOpcionesMenu a{
+    .divOpcionesMenu p{
         color: #A5A5A5;
         text-decoration: none;
-    }
-
-    .divOpcionesMenu a:hover{
-        color: black;
-    }
-
-
-
-
-
-    .divOpcionesMenu p{
         display: inline;
         margin-right: 100px;
         font-size: 20px;
-
+        cursor: pointer;
     }
 
-    .divTitlePrincipal2 .titlePrincipal{
-        font-size: 50px;
-        position: relative;
+    .divOpcionesMenu p:hover{
+        color: black;
     }
+
 
     .divTitlePrincipal img{
         display: none;
@@ -3087,6 +3062,9 @@ body.no-scroll {
     }
     
 
+
+    .PrincipalTitleSellMore{
+    }
     
     
     
@@ -3097,9 +3075,7 @@ body.no-scroll {
      //   margin-top: 100px;
         font-size: 50px;
         position: relative;
-        padding-top: 100px;
-        margin-top: 100px; 
-        padding-bottom: 20px;
+        padding-top: 40px;
     }
 
 
