@@ -1,15 +1,12 @@
 
-const correo = document.getElementById('inputEmail');
-const labelEmail = document.getElementById('labelEmail');
-const formulario = document.getElementById('formulario');
+const labelEmailPopUp = document.getElementById('labelEmail');
 const overlay = document.getElementById('overlay');
 
-const mensajeError = '';
-const errorCorreo1 = false;
-const errorCorreo2 = false;
+const errorCorreo1PopUp = false;
+const errorCorreo2PopUp = false;
 
-const MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
-const MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
+const MensajeErrorCorreo1PopUp = 'El campo de correo es obligatorio.\n';
+const MensajeErrorCorreo2PopUp = 'El correo no tiene un formato válido.\n';
 
 
 
@@ -20,7 +17,7 @@ let news = document.getElementById("newsletter")
 let closeNewsButton = document.getElementById('close-newsletter');
 let newsHidden = true;
 let popUpClosed = false;
-let correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+let correoRegexPopUp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
 
 
@@ -93,7 +90,7 @@ function correctText(element) {
 
 window.addEventListener('click', (event) => {
     if (event.target === overlay) {
-      popup.style.display = 'none';
+      news.style.display = 'none';
       overlay.style.display = 'none';
     }
   });
@@ -116,23 +113,22 @@ function getNewsData() {
 }
 
 function validateNews (){
-    const correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (newsMail.value === '') {
-        errorCorreo1 = true;
-        alert(MensajeErrorCorreo1);
+        errorCorreo1PopUp = true;
+        alert(MensajeErrorCorreo1PopUp);
         redBorder(newsMail)
-        redText(labelEmail)
-    } else if (!correoRegex.test(newsMail.value)) {
-        errorCorreo2 = true;
-        alert(MensajeErrorCorreo2);
+        redText(labelEmailPopUp)
+    } else if (!correoRegexPopUp.test(newsMail.value)) {
+        errorCorreo2PopUp = true;
+        alert(MensajeErrorCorreo2PopUp);
         redBorder(newsMail)
-        redText(labelEmail)
+        redText(labelEmailPopUp)
     } else {
-        errorCorreo1 = false;
-        errorCorreo2 = false;
+        errorCorreo1PopUp = false;
+        errorCorreo2PopUp = false;
         document.getElementById('warnings').innerText = '';
         correctBorder(newsMail)
-        correctText(labelEmail)
+        correctText(labelEmailPopUp)
         alert("El formulario se ha enviado correctamente.")
         news.style.display = 'none';
         overlay.style.display = 'none';
