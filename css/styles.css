@@ -82,13 +82,13 @@ body.no-scroll {
 .navMenu {
   position: absolute;
   top: 80px;
-  right: 20; /* Fixed missing unit */
+  right: 20;
   background-color: #FFFFFF;
   width: 100%;
   height: auto;
   max-height: 0;
-  transform: scaleY(0); /* Start collapsed */
-  transform-origin: top; /* Grow from the top */
+  transform: scaleY(0);
+  transform-origin: top;
   visibility: hidden;
   letter-spacing: 5px;
   text-align: left;
@@ -97,8 +97,8 @@ body.no-scroll {
 }
 
 .navMenu.visible {
-  transform: scaleY(1); /* Expand vertically */
-  visibility: visible; /* Visible when expanded */
+  transform: scaleY(1);
+  visibility: visible;
   opacity: 1;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
