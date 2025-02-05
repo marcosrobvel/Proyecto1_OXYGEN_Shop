@@ -10,6 +10,16 @@ let premiumPriceValue = Number(document.getElementById('precioPremium').textCont
 const API_URL = 'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json';
 
 
+function formatearNumero(num) {
+    const numFormateado = num.toFixed(1);
+    
+    if (numFormateado.endsWith('.0')) {
+      return numFormateado.slice(0, -2);
+    }
+    
+    return numFormateado;
+  }
+
 async function currency(){
     const res = await fetch(API_URL);
     const data = await res.json();
@@ -26,8 +36,8 @@ async function currency(){
     }
 
     select.addEventListener('change', ()=>{
-        professionalPrice.textContent = (professionalPriceValue * euros[select.value]).toFixed(1); 
-        premiumPrice.textContent = (premiumPriceValue * euros[select.value]).toFixed(1); 
+        professionalPrice.textContent = formatearNumero(professionalPriceValue * euros[select.value]); 
+        premiumPrice.textContent = formatearNumero(premiumPriceValue * euros[select.value]); 
 
 
         if(select.value == "usd"){
