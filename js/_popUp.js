@@ -1,15 +1,15 @@
 
-var correo = document.getElementById('inputEmail');
-var labelEmail = document.getElementById('labelEmail');
-var formulario = document.getElementById('formulario');
+const correo = document.getElementById('inputEmail');
+const labelEmail = document.getElementById('labelEmail');
+const formulario = document.getElementById('formulario');
 const overlay = document.getElementById('overlay');
 
-var mensajeError = '';
-var errorCorreo1 = false;
-var errorCorreo2 = false;
+const mensajeError = '';
+const errorCorreo1 = false;
+const errorCorreo2 = false;
 
-var MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
-var MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
+const MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
+const MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
 
 
 
@@ -92,7 +92,6 @@ function correctText(element) {
  
 
 window.addEventListener('click', (event) => {
-    // Verificar si el clic fue fuera del popup y el fondo oscuro
     if (event.target === overlay) {
       popup.style.display = 'none';
       overlay.style.display = 'none';
@@ -117,7 +116,7 @@ function getNewsData() {
 }
 
 function validateNews (){
-    var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (newsMail.value === '') {
         errorCorreo1 = true;
         alert(MensajeErrorCorreo1);

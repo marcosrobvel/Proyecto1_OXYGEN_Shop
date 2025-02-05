@@ -1,6 +1,6 @@
-
+const progress = document.getElementById('progress');
 window.addEventListener('load', () => {
-    const progress = document.getElementById('progress');
+    
     requestAnimationFrame(update);
 })
 

@@ -1,24 +1,24 @@
 
-var nombre = document.getElementById('inputName');
-var labelName = document.getElementById('labelName');
-var correo = document.getElementById('inputEmail');
-var labelEmail = document.getElementById('labelEmail');
-var consent = document.getElementById('inputCheck');
-var labelConsent = document.getElementById('labelCheck');
-var formulario = document.getElementById('formulario');
+const nombre = document.getElementById('inputName');
+const labelName = document.getElementById('labelName');
+const correo = document.getElementById('inputEmail');
+const labelEmail = document.getElementById('labelEmail');
+const consent = document.getElementById('inputCheck');
+const labelConsent = document.getElementById('labelCheck');
+const formulario = document.getElementById('formulario');
 
-var mensajeError = '';
-var errorNombre = false;
-var errorNombreMinimo2Caracteres = false;
-var errorCorreo1 = false;
-var errorCorreo2 = false;
-var errorCheck = false;
+let mensajeError = '';
+let errorNombre = false;
+let errorNombreMinimo2Caracteres = false;
+let errorCorreo1 = false;
+let errorCorreo2 = false;
+let errorCheck = false;
 
-var MensajeErrorNombre = 'El campo de nombre es obligatorio.\n';
-var MensajeErrorNombreMinimo2Caracteres = 'El campo de nombre debe tener entre 2 y 100 caracteres.\n';
-var MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
-var MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
-var MensajeErrorCheck = 'Debes aceptar el consentimiento para procesar tus datos.\n';
+const MensajeErrorNombre = 'El campo de nombre es obligatorio.\n';
+const MensajeErrorNombreMinimo2Caracteres = 'El campo de nombre debe tener entre 2 y 100 caracteres.\n';
+const MensajeErrorCorreo1 = 'El campo de correo es obligatorio.\n';
+const MensajeErrorCorreo2 = 'El correo no tiene un formato válido.\n';
+const MensajeErrorCheck = 'Debes aceptar el consentimiento para procesar tus datos.\n';
 
 function recogerDatos() {
     return {
@@ -55,7 +55,7 @@ function validacionFormulario() {
 
 
 
-    var nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,100}$/;
+    const nombreRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{2,100}$/;
     if (nombre.value === '') {
         errorNombre = true;
         MensajeErrorNombre;
@@ -76,7 +76,7 @@ function validacionFormulario() {
     }
 
 
-    var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     if (correo.value === '') {
         errorCorreo1 = true;
         MensajeErrorCorreo1;

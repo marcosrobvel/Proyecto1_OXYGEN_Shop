@@ -73,5 +73,5 @@ class Slider {
 }
   
   document.addEventListener('DOMContentLoaded', () => {
-    const slider = new Slider('slider');
+    new Slider('slider');
   });
