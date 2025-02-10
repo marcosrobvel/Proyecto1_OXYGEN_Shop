@@ -1243,6 +1243,10 @@
 
 @media only screen and (min-width: 1000px){
 
+    * {
+        margin: 0;
+    }
+
     .container {
         text-align: center;
         overflow: hidden;
@@ -1276,12 +1280,13 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
         width: 100%;
         height: 100px;
-        position: fixed;
+        position: absolute;
         background-color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 200px;
+        margin-left: 0;
     }
 
 
@@ -1397,7 +1402,7 @@
         font-weight: 700;
         text-align: center;
         position: relative;
-        top: -170px;
+        top: 80px;
         right: 255px;
         border-radius: 25px;
     }
@@ -1411,14 +1416,29 @@
         
     }
 
+    .pricing .pricingPremium .btnBegin3{
+        position: relative;
+        top: 95px;
+    }
+
     .pricing .pricingPremium{
         height: 450px;
     }
 
 
-    .pricing .pricingPremium input{
+    .pricingProfessionalTitle h6{
         position: relative;
-        top: -170px;
+        top: 50px;
+    }
+
+    .divSimboloYPrecio1{
+        position: relative;
+        top: 80px;
+    }
+
+    .divSimboloYPrecio2{
+        position: relative;
+        top: 90px;
     }
 
 
@@ -1481,7 +1501,7 @@
         font-weight: bold;
         font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
         font-family: 'Raleway'; 
-        margin-top: 20px;
+        margin-top: 40px;
         display: inline-block;
     }
     
@@ -1492,6 +1512,7 @@
         font-weight: 450;
         font-size: 15px;
         font-family: 'Raleway'; 
+        margin-top: 50px;
     
     }
 
@@ -1523,8 +1544,9 @@
     }
 
     
-
-    
+    .redIconRojoTexto h4, .redIconAzulTexto h4, .redIconVerdeTexto h4{
+        margin-top: 10px;
+    }
     
     .redIcon .blueIcon .greenIcon{
      //   display: inline-block;
@@ -1541,14 +1563,14 @@
 
     .blueIcon{
         position: relative;
-        bottom: 450px;
+        bottom: 330px;
         transform: scale(0.6);
     }
 
     .greenIcon{
         position: relative;
         left: 400px;
-        bottom: 910px;
+        bottom: 675px;
         transform: scale(0.6);
     }
 
@@ -1617,7 +1639,7 @@
 
     .titleBeAlwaysFirst h2{
         position: relative;
-        bottom: 320px;
+        bottom: 280px;
         right: 30px;
         font-weight: 400;
     }
@@ -1625,7 +1647,7 @@
 
     .titleBeAlwaysFirst h4{
         width: 500px;
-        bottom: 300px;
+        bottom: 250px;
         left: 40px;
         font-size: 20px;
     }
@@ -1636,7 +1658,7 @@
         height: 4px;
         width: 300px;
         position: relative;
-        bottom: 270px;
+        bottom: 200px;
         left: 140px;
     }
 
@@ -1680,7 +1702,7 @@
         left: 570px;
         font-weight: 400;
         width: 350px;
-        bottom: 220px;
+        bottom: 180px;
      //   font-size: ;
 
     }
@@ -1691,7 +1713,7 @@
         height: auto;
         width: 600px;
         left: 550px;
-        bottom: 250px;
+        bottom: 180px;
         font-size: 20px;
     }
 
@@ -1701,7 +1723,7 @@
         height: 4px;
         width: 300px;
         position: relative;
-        bottom: 220px;
+        bottom: 140px;
         left: 660px;
     }
 
@@ -1724,7 +1746,7 @@
     .titleIncreaseRecognitionYourBrand .rectangleTrumpet{
         position: relative;
         left: 800px;
-        top: -320px;
+        top: -250px;
         height: 400px;
         width: 400px;
     }
@@ -1744,7 +1766,7 @@
 
     .titleIncreaseRecognitionYourBrand h4{
         position: relative;
-        top: 10px;
+        top: 30px;
         right: 60px;
         width: 600px;
         font-size: 20px;
@@ -1757,7 +1779,7 @@
         height: 4px;
         width: 300px;
         position: relative;
-        bottom: 380px;
+        bottom: 330px;
         left: 50px;
     }
 
@@ -1798,6 +1820,16 @@
         
     }
 
+    .divSimboloYPrecio{
+        position: relative;
+        top: 80px;
+    }
+
+    .pricingBasicTitle h4{
+        position: relative;
+        top: 40px;
+    }
+
     .pricing input{
         position: relative;
         top: 170px;
@@ -1819,6 +1851,10 @@
         z-index: 2;
     }
 
+
+    .pricingBasicInformation2 p{
+        margin-bottom: 20px;
+    }
     
 
     .pricingBasic .pricingBasicInformation2{
@@ -1856,17 +1892,25 @@
         bottom: 70px;
     }
 
+    .pricingProfessionalTitle h4{
+        position: relative;
+        top: 40px;
+        left: -1px;
+    }
+
     .pricingProfessionalInformation .pricingBasicInformationEnPROFESSIONAL{
         position: relative;
         font-family: 'Open Sans';
         display: inline-block;
-        bottom: 250px;
+        bottom: 10px;
         z-index: 1;
         right: 100px;
         text-align: center;
     }
 
-
+    .pricingProfessionalInformation .pricingBasicInformationEnPROFESSIONAL p{
+        margin-bottom: 20px;
+    }
 
     .pricingPremium:hover{
         box-shadow: 10px 10px 15px #55DFB4;
@@ -1885,12 +1929,14 @@
         position: relative;
         font-family: 'Open Sans';
         text-align: center;
-        top: -240px;
      //   top: -250px;
         left: 80px;
         height: 100px;
     }
 
+    .pricingBasicInformationEnPREMIUM p{
+        margin-bottom: 20px;
+    }
 
     .pricing .pricingPremium input{
         position: relative;
@@ -1904,7 +1950,7 @@
         font-weight: 700;
         text-align: center;
         position: relative;
-        top: -150px;
+        bottom: 150px;
         right: 75px;
         border-radius: 25px;
         border: none;
@@ -1920,10 +1966,13 @@
     .pricingPremium .pricingPremiumTitle h4{
         position: relative;
         left: 20px;
+        top: 50px;
     }
 
-
-
+    .pricingPremiumTitle h6{
+        position: relative;
+        top: 60px;
+    }
 
     .anyQuestions{
         position: relative;
@@ -1942,22 +1991,40 @@
         right: 300px;
     }
 
+    .anyQuestions h5{
+        top: 20px;
+    }
+
+    .anyQuestionsRellenarDatos p{
+        padding-bottom: 10px;
+    }
+
+    .anyQuestionsEjemplo{
+        position: relative;
+        top: 100px;
+    }
+
     .anyQuestionsEjemplo .imagenTelefono{
         position: relative;
         left: 210px;
         bottom: 90px;
     }
 
+    .anyQuestionsEjemplo .imagenEmail{
+        position: relative;
+        bottom: 35px;
+    }
+
     .anyQuestionsEjemplo .parrafoNumero{
         position: relative;
         left: 245px;
-        bottom: 135px;
+        bottom: 120px;
     }
 
 
     .anyQuestionsEjemplo .parrafoEmail{
         position: relative;
-        bottom: 48px;
+        bottom: 65px;
     }
 
 
@@ -1969,6 +2036,20 @@
 
 
 
+    .formulario{
+        position: relative;
+        top: 150px;
+    }
+
+    // Slider --------------------------------
+
+        .slider{
+            overflow-y: hidden;
+            position: relative;
+            bottom: 170px;
+        }
+
+        // Fin slider ----------------------------
 
     .footer{
         margin-top: 0px;
@@ -1976,33 +2057,28 @@
         height: 80px;
         box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
         position: absolute;
-
     }
-
-    .footer .tituloYMarcaRegistradaFooter{
+    
+    .footer .tituloYMarcaRegistradaFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; 
         position: relative;
         left: 200px;
-        bottom: 20px;
     }
 
-
-
-
-    // Slider --------------------------------
-
-    .slider{
-        overflow-y: hidden;
-        position: relative;
-        bottom: 170px;
+    .footer .tituloYMarcaRegistradaFooter h2 {
+        margin: 0;
     }
 
-    // Fin slider ----------------------------
-
+    .footer .tituloYMarcaRegistradaFooter h6 {
+        margin-top: 20px;
+    }
 
     .footer .iconosFooter{
-        position: relative;
-        left: 1400px;
-        width: 80px;
+        left: 100vw;
+        bottom: 35px;
     }
 
 
